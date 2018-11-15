@@ -63,8 +63,8 @@ box-shadow: 10px 7px 137px 2px rgba(0,0,0,0.28);
 }
 
 .codrops-header h1 span {
-	color:#fff;
-    font-size:2.2em !important;
+	color:#fff !important;
+    font-size:2.2em;
     letter-spacing: 16px;
 }
 
