@@ -1,80 +1,113 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Becoming Michelle Obama</title>
-		<meta name="description" content="Becoming Michelle Obama" />
-		<meta name="keywords" content="Becoming Michelle Obama" />
-		<link rel="shortcut icon" href="../favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<script src="js/modernizr.custom.js"></script>
-	</head>
-	<body>
-		<div class="container">
-			<!-- Top Navigation -->
-			<header class="codrops-header">
-					<h1>BECOMING</h1><br>
-                <h1>MICHELLE OBAMA</h1>
-                <br><br>
-                <img src="bmo.png">
-			</header>
-			<section>
-                  
-				<form id="theForm" class="simform" autocomplete="off">
-					<div class="simform-inner">
-						<ol class="questions">
-							<li>
-								<span><label for="q1">I Am Becoming. . . </label></span>
-								<input id="q1" name="q1" type="text"/>
-							</li>
-							<li>
-								<span><label for="q2">What is your email address?</label></span>
-								<input id="q2" name="q2" type="text"/>
-							</li>
-						</ol><!-- /questions -->
-						<button class="submit" type="submit">Send answers</button>
-						<div class="controls">
-							<button class="previous"></button>
-							<button class="next"></button>
-							<div class="progress"></div>
-							<span class="number">
-								<span class="number-current"></span>
-								<span class="number-total"></span>
-							</span>
-							<span class="error-message"></span>
-						</div><!-- / controls -->
-					</div><!-- /simform-inner -->
-					<span class="final-message"></span>
-				</form><!-- /simform -->
-                <p>Take a minute to send yourself an email. To remind your future self about how you felt today and motivate yourself.  Your email address will never be sold. Your email message will never be made public.</p>
-			</section>
-		</div><!-- /container -->
-		<script src="js/classie.js"></script>
-		<script src="js/stepsForm.js"></script>
-		<script>
-			var theForm = document.getElementById( 'theForm' );
 
-			new stepsForm( theForm, {
-				onSubmit : function( form ) {
-					// hide form
-					classie.addClass( theForm.querySelector( '.simform-inner' ), 'hide' );
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Becoming Michelle Obama</title>
+	<meta name="description" content="Becoming Michelle Obama" />
+	<meta name="keywords" content="Becoming Michelle Obama" />
+	<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr.custom.js"></script>
+	<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+	<script type="text/javascript">
+		(function () {
+			emailjs.init("user_vBvIG9NszaPlCIba7FnLS");
+		})();
+	</script>
+</head>
 
-					/*
-					form.submit()
-					or
-					AJAX request (maybe show loading indicator while we don't have an answer..)
-					*/
+<body>
+	<div class="container">
+		<!-- Top Navigation -->
+		<header class="codrops-header">
+			<h1>BECOMING</h1><br>
+			<h1>MICHELLE OBAMA</h1>
+			<br><br>
+			<img src="bmo.png">
+		</header>
+		<section>
 
-					// let's just simulate something...
-					var messageEl = theForm.querySelector( '.final-message' );
-					messageEl.innerHTML = 'Thank you! We\'ll be in touch.';
-					classie.addClass( messageEl, 'show' );
-				}
-			} );
-		</script>
-	</body>
+			<form id="theForm" class="simform" autocomplete="off">
+				<div class="simform-inner">
+					<ol class="questions">
+						<li>
+							<span><label for="q1">I Am Becoming. . . </label></span>
+							<input id="becoming_answer" name="becoming_answer" type="text" />
+						</li>
+						<li>
+							<span><label for="q2">What is your email address?</label></span>
+							<input id="guest_email" name="guest_email" type="text" />
+						</li>
+					</ol><!-- /questions -->
+					<button id="submit-form" class="submit" type="submit">Send answers</button>
+					<div class="controls">
+						<button class="previous"></button>
+						<button class="next"></button>
+						<div class="progress"></div>
+						<span class="number">
+							<span class="number-current"></span>
+							<span class="number-total"></span>
+						</span>
+						<span class="error-message"></span>
+					</div><!-- / controls -->
+				</div><!-- /simform-inner -->
+				<span class="final-message"></span>
+			</form><!-- /simform -->
+			<p>Take a minute to send yourself an email. To remind your future self about how you felt today and motivate
+				yourself. Your email address will never be sold. Your email message will never be made public.</p>
+		</section>
+	</div><!-- /container -->
+	<script src="js/classie.js"></script>
+	<script src="js/stepsForm.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	 crossorigin="anonymous"></script>
+
+	<script>
+		var theForm = document.getElementById('theForm');
+		new stepsForm(theForm, {
+			onSubmit: function (form) {
+				// hide form
+				classie.addClass(theForm.querySelector('.simform-inner'), 'hide');
+
+				/*
+				form.submit()
+				or
+				AJAX request (maybe show loading indicator while we don't have an answer..)
+				*/
+
+				// let's just simulate something...
+				var messageEl = theForm.querySelector('.final-message');
+				messageEl.innerHTML = 'Thank you! We\'ll be in touch.';
+				classie.addClass(messageEl, 'show');
+
+				var url = 'https://script.google.com/macros/s/AKfycbz_TXW4ffgrGS1YKWRTY41DCxYuwRBdMvFUsLlIGiT26vcr-w/exec';
+				console.log($(form).serialize());
+				$.ajax({
+					type: "GET",
+					url: url,
+					dataType: "json",
+					data: $(form).serialize(),
+					success: function () {
+						var service_id = 'becomingmichelleobama_gmail_com';
+						var template_id = 'becomingmichelleobama';
+						var template_params = {
+							"guest_email"    : $('#theForm').find('input[name="guest_email"]').val(),
+							"becoming_answer": $('#theForm').find('input[name="becoming_answer"]').val()
+						}
+						emailjs.send(service_id, template_id, template_params);
+						setTimeout(function () {					
+							location.reload();
+						}, 3000);
+					}
+				});
+			}
+		});
+	</script>
+</body>
+
 </html>
