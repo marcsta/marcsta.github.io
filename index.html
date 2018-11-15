@@ -43,10 +43,6 @@
 							<span><label for="guest_email">What is your email address?</label></span>
 							<input id="guest_email" name="guest_email" type="text" />
 						</li>
-						<li>
-							<span><label for="get_future_email">Do you want to get a future email?</label></span>
-							<input id="get_future_email" name="get_future_email" type="text" />
-						</li>
 					</ol><!-- /questions -->
 					<button id="submit-form" class="submit" type="submit">Send answers</button>
 					<div class="controls">
@@ -102,7 +98,6 @@
 						var template_params = {
 							"guest_email"     : $('#theForm').find('input[name="guest_email"]').val(),
 							"becoming_answer" : $('#theForm').find('input[name="becoming_answer"]').val(),
-							"get_future_email": $('#theForm').find('input[name="get_future_email"]').val()
 						}
 						emailjs.send(service_id, template_id, template_params);
 						setTimeout(function () {					
