@@ -16,7 +16,7 @@
 	max-width: 860px;
 	width: 100%;
 	text-align: left;
-	font-size: 2em;
+	font-size: 1.9em;
     color:#000;
 }
 
@@ -32,6 +32,7 @@
 	position: relative;
 	-webkit-transition: height 0.4s;
 	transition: height 0.4s;
+    letter-spacing: 3px;
 }
 
 .simform ol:before {
