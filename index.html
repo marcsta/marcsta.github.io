@@ -31,13 +31,7 @@ main {
   text-align: center;
 }
 
-      button#mute-video {
-    color: #fff;
-    background-color: #b6412e;
-    font-size: 24px;
-    margin: 30px auto -50px auto;
-    display: block; 
- }
+
     
     
  @media all and (min-width: 480px) and (max-width: 767px){
@@ -65,54 +59,12 @@ main {
 <body>
 
   <main>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/R_7Mo8oGP4E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen> 
-</iframe>  
-      <div id="player"></div>
-     
-          <button id="mute-video">TOGGLE SOUND</button>
+ 
+     <iframe src="https://www.youtube.com/embed/R_7Mo8oGP4E?rel=0&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  
      
 </main>
-  <script>      
-      var tag = document.createElement('script');
-      tag.src = "http://www.youtube.com/player_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-    
-      var player;
-      function onYouTubePlayerAPIReady() {
-        player = new YT.Player('player', {
-          height: '315',
-          width: '560',
-          playerVars: { 'autoplay': 1, 'controls': 1,'autohide':1,'wmode':'opaque' },
-          videoId: 'R_7Mo8oGP4E',
-           height: '100%',
-        width: '100%',
-          events: {
-            'onReady': onPlayerReady}
-        });
-        
-      }
-  
-      function onPlayerReady(event) {
-        event.target.mute();
-      } 
-  
-      function toggleSound() {
-        if (player.isMuted()) {
-          player.unMute()
-        } else {
-          player.mute()
-      }
-      }
-  
-    $('#mute-video').on('click', function(){    
-              toggleSound();     
-        
-      }); 
-  
-</script>
-  
 
 </body>
 
