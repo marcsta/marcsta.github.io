@@ -1,35 +1,170 @@
 <!DOCTYPE html>
-<html lang="en" >
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Youtube card</title>
-  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	  <meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DJ MUSTARD</title>
+	<meta name="description" content="DJ MUSTARD" />
+	<meta name="keywords" content="DJ MUSTARD" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet">
+	<style>
+    /* ------------ SETTINGS ------------ */
 
+html, body {
+	height: 100%;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	overflow: hidden;
+	background: #000;
+}
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+/* ------------ CARD ------------ */
 
-      <link rel="stylesheet" href="css/style.css">
+.card {
+	width: 70vw;
+	height: calc(9/16 * 70vw);
+	max-width: calc(16/9 * 70vh);
+	max-height: 70vh;
+	display: flex;
+	position: relative;
+	border-radius: 6px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	background: url("https://i.ytimg.com/vi/R_7Mo8oGP4E/maxresdefault.jpg") center center/cover;
+	overflow: hidden;
+}
+.card-play {
+	width: 48px;
+	height: 48px;
+	position: relative;
+	z-index: 1;
+	margin: auto;
+	opacity: 0;
+	background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1613479/play.svg") center center/cover;
+	cursor: pointer;
+	transition: opacity .3s ease-out;
+}
+.card-play:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	background: #000;
+	transition: all .5s ease-out;
+}
+.card-video {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 2;
+	background: #000;
+}
+.card-video iframe {
+	width: 100%;
+	height: 100%;
+}
+.card:after {
+	content: '';
+	width: 250%;
+	height: 250%;
+	position: absolute;
+	top: var(--y);
+	left: var(--x);
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	background: radial-gradient(circle closest-side, rgba(255, 255, 255, 0.3), transparent);
+	transition: opacity 0.5s ease-out;
+}
+/* ------------ STATES ------------ */
 
-  
+.card:hover:after, .card:hover .card-play {
+	opacity: 1;
+}
+.video-is-open:after {
+	display: none;
+}
+.video-is-open .card-play {
+	opacity: 1;
+}
+.video-is-open .card-play:after {
+	width: 2vh;
+	height: 2vh;
+	-webkit-transform: translate(-50%, -50%) scale(88.8888888889);
+	transform: translate(-50%, -50%) scale(88.8888888889);
+	transition: -webkit-transform .5s ease-out;
+	transition: transform .5s ease-out;
+	transition: transform .5s ease-out, -webkit-transform .5s ease-out;
+}
+    </style>
 </head>
-
 <body>
+	<div class="card">
+		<div class="card-play"></div>
+		<div class="card-video">
+			<iframe allowfullscreen="allowfullscreen" frameborder="0" id="video" name="video" src="https://www.youtube.com/embed/R_7Mo8oGP4E?enablejsapi=1&amp;html5=1&amp;iv_load_policy=3&amp;rel=0&amp;controls=0"></iframe>
+		</div>
+	</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script>
+        // Variables
+var player,
+		card  = document.querySelector( '.card' ),
+		play  = document.querySelector( '.card-play' ),
+		video = document.querySelector( '.card-video' );
 
-  
-<div class="card">
-  <div class="card-play"></div>
-  <div class="card-video">
-    <iframe id="video" src="https://www.youtube.com/embed/R_7Mo8oGP4E?enablejsapi=1&amp;html5=1&amp;iv_load_policy=3&amp;rel=0&amp;controls=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-  </div>
-</div>
-  
-  
 
-    <script  src="js/index.js"></script>
+// Shine effect
+card.onmousemove = function (e) {
+	const x = e.pageX - card.offsetLeft;
+	const y = e.pageY - card.offsetTop;
+
+	card.style.setProperty( '--x', x + 'px' );
+	card.style.setProperty( '--y', y + 'px' );
+}
 
 
+// Youtube API
+function onYouTubePlayerAPIReady() {
+  player = new YT.Player('video', {
+    events: {
+      'onReady': onPlayerReady
+    }
+  });
+}
 
 
+// Player Ready
+function onPlayerReady(event) {
+	play.addEventListener( 'click', function() {
+		card.classList.add( 'video-is-open' );
+		setTimeout(function() {
+			video.style.display = 'block';
+			player.playVideo();
+		}, 500);
+	});
+}
+
+
+// Inject YouTube API script
+var tag = document.createElement('script');
+tag.src = "//www.youtube.com/player_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+
+
+	</script>
 </body>
-
 </html>
