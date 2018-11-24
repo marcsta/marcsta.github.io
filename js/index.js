@@ -1,46 +1,31 @@
-// Variables
-var player,
-		card  = document.querySelector( '.card' ),
-		play  = document.querySelector( '.card-play' ),
-		video = document.querySelector( '.card-video' );
+// 2. This code loads the IFrame Player API code asynchronously.
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/player_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-
-// Shine effect
-card.onmousemove = function (e) {
-	const x = e.pageX - card.offsetLeft;
-	const y = e.pageY - card.offsetTop;
-
-	card.style.setProperty( '--x', x + 'px' );
-	card.style.setProperty( '--y', y + 'px' );
-}
-
-
-// Youtube API
+// 3. This function creates an <iframe> (and YouTube player)
+//    after the API code downloads.
+var player;
 function onYouTubePlayerAPIReady() {
-  player = new YT.Player('video', {
+  player = new YT.Player('player', {
+    playerVars: {
+      'autoplay': 1, 
+      'controls': 0,
+      'autohide': 1,
+      'loop': 1,
+      'wmode':'opaque' },
+    videoId: 'f9sg_HhSa-Y',
     events: {
-      'onReady': onPlayerReady
-    }
+      'onReady': onPlayerReady}
   });
 }
 
 
-// Player Ready
+// 4. The API will call this function when the video player is ready.
 function onPlayerReady(event) {
-	play.addEventListener( 'click', function() {
-		card.classList.add( 'video-is-open' );
-		setTimeout(function() {
-			video.style.display = 'block';
-			player.playVideo();
-		}, 500);
-	});
+ event.target.mute();
+  //event.target.setPlaybackRate(0.5);
 }
-
-
-// Inject YouTube API script
-var tag = document.createElement('script');
-tag.src = "//www.youtube.com/player_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 
