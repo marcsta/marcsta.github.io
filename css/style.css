@@ -1,0 +1,15 @@
+#player {
+
+  position: relative;
+  top: -20px;
+  pointer-events: none;
+}
+
+.player-contain {
+  position: relative;
+
+  width: 640px;
+  height: 330px;
+  overflow: hidden;
+  pointer-events: none;
+}

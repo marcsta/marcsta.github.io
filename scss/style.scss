@@ -1,0 +1,34 @@
+@import "compass/css3";
+
+#player {
+    -webkit-filter: grayscale(1) blur(9px);
+    opacity: .6;
+    position:relative;
+  top:-20px;
+    pointer-events:none;
+}
+
+.player-contain {
+  position:relative;
+  background: #000;
+  @include background-image(linear-gradient(116deg, #1A73A2 9%, #73B677 83%, #B1E458 100%));
+  width: 640px;
+  height: 330px;
+  overflow: hidden;
+  pointer-events:none;
+  h2 {
+    position: absolute;
+    z-index: 3;
+    top: 100px;
+/*     left: 30px; */
+    font-family: "Helvetica", arial;
+    font-weight: 200;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 0 1px 1px rgba(0,0,0,.5)
+    
+  }
+  
+}
