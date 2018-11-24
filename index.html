@@ -1,111 +1,117 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en" >
 
 <head>
-	<meta charset="UTF-8" />
+  <meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Becoming Michelle Obama</title>
-	<meta name="description" content="Becoming Michelle Obama" />
-	<meta name="keywords" content="Becoming Michelle Obama" />
-	<link rel="shortcut icon" href="../favicon.ico">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-	<link rel="stylesheet" type="text/css" href="css/demo.css" />
-	<link rel="stylesheet" type="text/css" href="css/component.css" />
-	<script src="js/modernizr.custom.js"></script>
-	<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
-	<script type="text/javascript">
-		(function () {
-			emailjs.init("user_vBvIG9NszaPlCIba7FnLS");
-		})();
-	</script>
+	<title>DJ MUSTARD</title>
+	<meta name="description" content="DJ MUSTARD" />
+	<meta name="keywords" content="DJ MUSTARD" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  
 </head>
+<style>
+    
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000;
+  line-height: 1.5em;
+  font-size: 22px;
+  text-transform: uppercase;
+}
 
+main {
+  padding: 15px 30px;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  text-align: center;
+}
+
+      button#mute-video {
+    color: #fff;
+    background-color: #b6412e;
+    font-size: 24px;
+    margin: 30px auto -50px auto;
+    display: block; 
+ }
+    
+    
+ @media all and (min-width: 480px) and (max-width: 767px){
+
+   }
+ 
+  @media all and (min-width: 768px) and (max-width: 959px){
+
+   }
+  @media all and (min-width: 960px) and (max-width: 1199px){
+     iframe{
+        width:616px;
+        height:315px;
+    }
+  
+  }
+  @media all and (min-width:1200px){
+     iframe{
+        width:1016px;
+        height:519px;
+    }
+  }
+
+</style>
 <body>
-	<div class="container">
-		<!-- Top Navigation -->
-		<header class="codrops-header">
-			<h1><span>BECOMING</span></h1><br>
-			<h1>MICHELLE OBAMA</h1>
-			<br><br>
-			<img src="bmo.png">
-		</header>
-		<section>
-			<form id="theForm" class="simform" autocomplete="off">
-				<div class="simform-inner">
-					<ol class="questions">
-						<li>
-							<span><label for="becoming_answer">I AM BECOMING. . . </label></span>
-							<input id="becoming_answer" name="becoming_answer" type="text" />
-						</li>
-						<li>
-							<span><label for="guest_email">What is your email address?</label></span>
-							<input id="guest_email" name="guest_email" type="text" />
-						</li>
-					</ol><!-- /questions -->
-					<button id="submit-form" class="submit" type="submit">Send answers</button>
-					<div class="controls">
-						<button class="previous"></button>
-						<button class="next"></button>
-						<div class="progress"></div>
-						<span class="number">
-							<span class="number-current"></span>
-							<span class="number-total"></span>
-						</span>
-						<span class="error-message"></span>
-					</div><!-- / controls -->
-				</div><!-- /simform-inner -->
-				<span class="final-message"></span>
-			</form><!-- /simform -->
-			<p>Mrs. Obama takes readers inside her remarkable journey, telling her full story as she has lived it. <br> Take a minute to think how you felt today and start the chapter in your journey. <br><br><span>Your email address will never be sold. Your email message will never be made public.</span></p>
-		</section>
-	</div><!-- /container -->
-	<script src="js/classie.js"></script>
-	<script src="js/stepsForm.js"></script>
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-	 crossorigin="anonymous"></script>
 
-	<script>
-		var theForm = document.getElementById('theForm');
-		new stepsForm(theForm, {
-			onSubmit: function (form) {
-				// hide form
-				classie.addClass(theForm.querySelector('.simform-inner'), 'hide');
+  <main>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/R_7Mo8oGP4E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen> 
+</iframe>      
+          <button id="mute-video">TOGGLE SOUND</button>
+     
+</main>
+  <script>      
+      var tag = document.createElement('script');
+      tag.src = "http://www.youtube.com/player_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-				/*
-				form.submit()
-				or
-				AJAX request (maybe show loading indicator while we don't have an answer..)
-				*/
+    
+      var player;
+      function onYouTubePlayerAPIReady() {
+        player = new YT.Player('player', {
+          height: '315',
+          width: '560',
+          playerVars: { 'autoplay': 1, 'controls': 1,'autohide':1,'wmode':'opaque' },
+          videoId: 'PASTE_YOUR_YOUTUBE_VIDEO_ID_HERE',
+           height: '100%',
+        width: '100%',
+          events: {
+            'onReady': onPlayerReady}
+        });
+        
+      }
+  
+      function onPlayerReady(event) {
+        event.target.mute();
+      } 
+  
+      function toggleSound() {
+        if (player.isMuted()) {
+          player.unMute()
+        } else {
+          player.mute()
+      }
+      }
+  
+    $('#mute-video').on('click', function(){    
+              toggleSound();     
+        
+      }); 
+  
+</script>
+  
 
-				// let's just simulate something...
-				var messageEl = theForm.querySelector('.final-message');
-				messageEl.innerHTML = 'Thank you! We\'ll be in touch.';
-				classie.addClass(messageEl, 'show');
-
-				var url = 'https://script.google.com/macros/s/AKfycbz_TXW4ffgrGS1YKWRTY41DCxYuwRBdMvFUsLlIGiT26vcr-w/exec';
-				console.log($(form).serialize());
-				$.ajax({
-					type: "GET",
-					url: url,
-					dataType: "json",
-					data: $(form).serialize(),
-					success: function () {
-						var service_id = 'becomingmichelleobama_gmail_com';
-						var template_id = 'becomingmichelleobama';
-						var template_params = {
-							"guest_email"     : $('#theForm').find('input[name="guest_email"]').val(),
-							"becoming_answer" : $('#theForm').find('input[name="becoming_answer"]').val(),
-						}
-						emailjs.send(service_id, template_id, template_params);
-						setTimeout(function () {					
-							location.reload();
-						}, 3000);
-					}
-				});
-			}
-		});
-	</script>
 </body>
 
 </html>
