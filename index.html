@@ -1,36 +1,67 @@
 <!DOCTYPE html>
 <html lang="en" >
-
 <head>
-  <meta charset="UTF-8">
-  <title>Youtube card</title>
-  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
-  <link rel='stylesheet' href='css/6d36d66998194acf3c6cc2e89.css'>
-
-      <link rel="stylesheet" href="css/style.css">
-
-  
+ <meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DJ MUSTARD</title>
+	<meta name="description" content="DJ MUSTARD" />
+	<meta name="keywords" content="DJ MUSTARD" />
+   <style>
+    #player {
+    	position: relative;
+    	top: -20px;
+    	pointer-events: none;
+    }
+    .player-contain {
+    	position: relative;
+    	background: #000;
+    	background-size: 100%;
+    	width: 640px;
+    	height: 330px;
+    	overflow: hidden;
+    	pointer-events: none;
+    }
+    </style>
 </head>
 
 <body>
 
-  
-<div class="card">
-  <div class="card-play"></div>
-  <div class="card-video">
-    <iframe id="video" src="https://www.youtube.com/embed/JE9z-gy4De4?enablejsapi=1&amp;html5=1&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-  </div>
+  <!-- 1. The <div> tag will contain the <iframe> (and video player) -->
+<div class="player-contain">
+  <div id="player"></div>
 </div>
-  
-  
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script>
+    
+    // 2. This code loads the IFrame Player API code asynchronously.
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/player_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-    <script  src="js/index.js"></script>
+// 3. This function creates an <iframe> (and YouTube player)
+//    after the API code downloads.
+var player;
+function onYouTubePlayerAPIReady() {
+  player = new YT.Player('player', {
+    playerVars: {
+      'autoplay': 1, 
+      'controls': 0,
+      'autohide': 1,
+      'loop': 1,
+      'wmode':'opaque' },
+    videoId: 'R_7Mo8oGP4E',
+    events: {
+      'onReady': onPlayerReady}
+  });
+}
 
-
-
-
+// 4. The API will call this function when the video player is ready.
+function onPlayerReady(event) {
+ event.target.unmute();
+  //event.target.setPlaybackRate(0.5);
+}
+    </script>
 </body>
-
 </html>
