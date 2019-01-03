@@ -64,7 +64,6 @@ col p .sml{
 }
 .row{
   padding: 10px;
-  margin-top:20px;
 }
 #tour-info{
     max-width: 800px;
@@ -72,10 +71,9 @@ margin: 0 auto;
     
 }
   
-  footer {  
-   text-align:center;
-    background: #003366;
-    color:white;
+  #ftr {  
+max-width:50px;
+margin: 0 auto;      
   }
 .bttn{
     cursor: pointer;
