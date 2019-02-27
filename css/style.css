@@ -19,10 +19,11 @@
 }
 
 body {
-  padding: 1em;
   background:#000;
 }
-
+#header{
+      padding: 1em;
+}
 img {
   
 }
