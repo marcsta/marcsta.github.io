@@ -5,5 +5,5 @@ $('#justified-gallery').justifiedGallery({
   lastRow: 'justify',
   rowHeight: size,
   maxRowHeight: size,
-  margins: 5
+  margins: 0
 })
