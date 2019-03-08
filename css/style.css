@@ -189,11 +189,11 @@ color: fff;
   transition-delay: 0.5s;
 }
 
-.section.section--shop:hover {
+/*.section.section--shop:hover {
   background-image:url('/SQ.JPG');
   background-repeat: repeat;
 }
-/*.section.section--shop h2, .section.section--videos h2{
+.section.section--shop h2, .section.section--videos h2{
     display:none;
 }
 .section.section--shop:hover.section--shop h2, .section.section--videos:hover.section.section--videos h2{
