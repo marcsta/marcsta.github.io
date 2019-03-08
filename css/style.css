@@ -196,7 +196,7 @@ color: fff;
 .section.section--shop h2, .section.section--videos h2, .section.section--music h2{
     display:none;
 }
-.section.section--shop:hover.section--shop h2, .section.section--videos:hover.section.section--videos h2, .section.section--music h2{
+.section.section--shop:hover.section--shop h2, .section.section--videos:hover.section.section--videos h2, .section.section--music:hover .section.section--music h2{
     display:block;
 }
 .section.section--videos {
