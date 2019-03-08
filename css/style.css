@@ -192,13 +192,13 @@ color: fff;
 /*.section.section--shop:hover {
   background-image:url('/SQ.JPG');
   background-repeat: repeat;
-}
-.section.section--shop h2, .section.section--videos h2{
+}*/
+.section.section--shop h2, .section.section--videos h2, .section.section--music h2{
     display:none;
 }
-.section.section--shop:hover.section--shop h2, .section.section--videos:hover.section.section--videos h2{
+.section.section--shop:hover.section--shop h2, .section.section--videos:hover.section.section--videos h2, .section.section--music h2{
     display:block;
-}*/
+}
 .section.section--videos {
    background: linear-gradient(0deg,rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url("/SQ.gif")no-repeat center center; 
   -webkit-background-size: cover;
