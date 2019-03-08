@@ -228,8 +228,13 @@ a:focus {
 	.sbq-header {
 		flex-direction: column;
 		align-items: flex-start;
-		font-size: 0.65em;
 	}
+    .sbq-header .social .scc{
+    font-size: 0.65em;
+}
+.sbq-header .social .mcc{
+    font-size: 0.85em;
+}
     .sbq-header__title img{
 	max-width:150px;
     padding-top:20px;
