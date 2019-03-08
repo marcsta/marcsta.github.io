@@ -1,3 +1,4 @@
+"use strict";
 // Get window dimension
 var ww = document.documentElement.clientWidth || document.body.clientWidth;
 var wh = window.innerHeight;
