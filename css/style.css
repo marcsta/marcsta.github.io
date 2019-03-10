@@ -1,0 +1,382 @@
+html {
+  box-sizing: border-box;
+  font-family: "arial", serif;
+  color: #555;
+  font-size: 16px;
+}
+
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+      -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
+
+header{
+    background-color:#000;
+    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+    font-weight:bold;
+    color:#fff;
+    top:0;
+    margin:0 auto;
+    text-align: center;
+    width:100%;
+    position:fixed;
+    z-index: 1;
+    height:50px
+    
+}
+header #social{
+    text-align:right;
+    padding:20px;
+}
+header #social a{
+    margin:0 auto;
+    text-align:right;
+    padding:20px;
+    color:#fff;
+}
+/**
+ * The fixed Side 
+ */
+.side {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+  width: 50px;
+  border: 3px solid rgba(0, 0, 0, 1);
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "nimbus-sans", sans-serif;
+  letter-spacing: .0875rem;
+  font-size: 10px;
+  transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
+  background:#fff;
+}
+.side:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+.side .side__inner {
+  position: relative;
+  height: 100%;
+  white-space: nowrap;
+}
+.side a {
+  color: inherit;
+  word-spacing: 0;
+  transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
+}
+.side .top,
+.side .bottom {
+  position: absolute;
+  left: 0;
+  -webkit-transform: rotate(-90deg) perspective(1px);
+          transform: rotate(-90deg) perspective(1px);
+  -webkit-transform-origin: 50px 50px;
+          transform-origin: 50px 50px;
+  height: 50px;
+  line-height: 50px;
+  white-space: nowrap;
+  word-spacing: .5rem;
+}
+.side .top {
+  top: 25px;
+  text-align: right;
+  color: #000;
+  font-weight:bold;
+}
+.side .bottom {
+  top: auto;
+  bottom: 75px;
+  color: #000;
+  letter-spacing:12px;
+  font-size:15px;
+}
+.side .bottom:hover a {
+  color: rgba(0, 0, 0, 0.2);
+}
+.side .bottom:hover a:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/**
+ * The first navigation
+ */
+.anchornav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.anchornav li {
+  display: block;
+}
+.anchornav li::after {
+  content: '';
+  width: 1.3rem;
+  display: block;
+  height: 2px;
+  background: black;
+}
+.anchornav li:last-child::after {
+  display: none;
+}
+.anchornav a {
+  display: block;
+  padding: 1em 0;
+  font-family: "nimbus-sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1.4px;
+  color: inherit;
+  transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
+}
+.anchornav a span {
+  display: inline;
+  padding: .5em 0 0;
+  opacity: .3;
+  letter-spacing: normal;
+  font-family: "ff-meta-serif-web-pro", serif;
+  text-transform: none;
+}
+.anchornav a:hover {
+  color: #de5f5f;
+}
+.anchornav a:hover span {
+  opacity: 1;
+  color: #181818;
+}
+
+/**
+ * The different sections
+ */
+.section {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  min-height: 80vh;
+  width: 100%;
+  align-content: center;
+   padding: 40vh 50px 10vh 75px;
+ 
+}
+.section svg {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 50px;
+}
+.section svg.bottom {
+  bottom: 0;
+  top: auto;
+  fill: grey;
+}
+.section .section__inner {
+  height: 100%;
+  margin: auto auto auto 0;
+}
+.section.section--news, .section.section--shop, .section.section--videos, .section.section--music{
+  cursor: pointer;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.section.section--hello {
+  background: url("/1.jpeg")no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #fff;
+  /*padding: 50vh 50px 10vh 75px;*/
+}
+.section.section--news {
+  background-color: #fff;
+  color: #000;
+}
+.section.section--shop {
+  background-image:url('/shop.jpg');
+    background-repeat: repeat;
+color: fff;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  transition: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0.5s;
+}
+
+/*.section.section--shop:hover {
+  background-image:url('/SQ.JPG');
+  background-repeat: repeat;
+}*/
+.section.section--shop h2, .section.section--videos h2, .section.section--music h2{
+    display:none;
+}
+.section.section--shop:hover.section--shop h2, 
+.section.section--videos:hover.section.section--videos h2, 
+.section.section--music:hover.section.section--music h2{
+    display:block;
+}
+.section.section--videos {
+   background: linear-gradient(0deg,rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url("/SQ.gif")no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #ff0000;
+}
+
+.section.section--music {
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("/1.jpeg")no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #fff; 
+}
+
+footer{
+    background-color:#000;
+    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+    font-weight:bold;
+    color:#fff;
+    bottom:0;
+    margin:0 auto;
+    text-align: center;
+    width:100%;
+    position:fixed;
+    height:50px;
+    
+}
+footer p{
+    margin:0 auto;
+    text-align:center;
+    padding:20px;
+    font-size:12px;
+}
+
+/**
+ * Typo
+ */
+h1, .h1, h2, .h2, h3, .h3, h4, .h5 {
+  font-family: "nimbus-sans", sans-serif;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+@media (min-width: 30rem) {
+  h1, .h1, h2, .h2, h3, .h3, h4, .h5 {
+    letter-spacing: -2px;
+  }
+}
+h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h5 a {
+  color: inherit;
+}
+h1 a:hover, .h1 a:hover, h2 a:hover, .h2 a:hover, h3 a:hover, .h3 a:hover, h4 a:hover, .h5 a:hover {
+  border-bottom: .1875rem solid;
+}
+h1 span, .h1 span, h2 span, .h2 span, h3 span, .h3 span, h4 span, .h5 span {
+  color: #de5f5f;
+}
+
+h1, .h1 {
+  font-size: 2.5rem;
+}
+
+h2, .h2 {
+  font-size: 3.2rem;
+}
+
+.pre {
+  display: inline-block;
+  font-size: 12px;
+  margin: 0;
+  opacity: .8;
+  letter-spacing: 1.4px;
+  word-spacing: .2rem;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  color: inherit;
+}
+.pre span {
+  font-size: .9em;
+  margin-right: .4em;
+  opacity: .5;
+}
+.pre:hover {
+  opacity: 1;
+}
+
+p {
+  font-size: .75rem;
+  line-height: 1.4;
+}
+
+p a {
+  font-weight: bold;
+  color: inherit;
+}
+p a:hover {
+  border-bottom: .1875rem solid;
+}
+
+.lead {
+  display: block;
+  font-size: .875rem;
+  margin: 0;
+}
+
+.news {
+  font-size: .75rem;
+}
+.news.block {
+  display: inline-block;
+  width: 100%;
+}
+
+.news .link {
+  display: block;
+  margin: 2em 0 0 0;
+  color: #555;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+.news p {
+  font-size: inherit;
+  color: #343436;
+  opacity: .7;
+}
+@media (min-width: 30rem) {
+      h1, .h1 {
+    font-size: 2.5rem;
+  }
+     h2, .h2 {
+    font-size: 5rem;
+  }
+      p {
+    font-size: .875rem;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+  .news.block {
+    width: 30%;
+  }
+    .side .bottom {
+  top: auto;
+  bottom: 75px;
+  color: #000;
+  font-size:10px;
+  letter-spacing:4px;
+}
+}
