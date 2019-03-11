@@ -3,6 +3,7 @@ html {
   font-family: "arial", serif;
   color: #555;
   font-size: 16px;
+    scroll-behavior: smooth 
 }
 
 
@@ -481,18 +482,20 @@ ul li.has-children span:hover:after {
   -o-background-size: cover;
   background-size: cover;
 color: fff;
-  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+ k;
   transition: 0.5s;
   transition-timing-function: ease;
   transition-delay: 0.5s;
 }
 
-/*.section.section--shop:hover {
+/*
+ -webkit-text-fill-color: white; /* Will override color (regardless of order)
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: blac
+.section.section--shop:hover {
   background-image:url('/SQ.JPG');
   background-repeat: repeat;
-}*/
+}
 .section.section--shop h2, .section.section--videos h2, .section.section--music h2{
     display:none;
 }
@@ -500,7 +503,7 @@ color: fff;
 .section.section--videos:hover.section.section--videos h2, 
 .section.section--music:hover.section.section--music h2{
     display:block;
-}
+}*/
 .section.section--videos {
    background: url("/5.jpeg")no-repeat center bottom; 
   -webkit-background-size: cover;
