@@ -158,12 +158,14 @@ a {
 		max-width: 420px;
 		bottom: 60px;
 	}
+    	font-size: 11px;
 }
 @media only screen and (max-width: 768px) {
 	#social {
 		max-width: 360px;
-		bottom: 30px;
+		bottom: 35px;
 	}
+    	font-size: 7px;
 }
 /*---------------------------------------------------*/
 
@@ -282,7 +284,6 @@ footer {
 footer p {
 	margin: 0 auto;
 	padding: 25px;
-	font-size: 11px;
 }
 footer #cp{
     float:right;
