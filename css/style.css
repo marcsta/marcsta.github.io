@@ -144,7 +144,7 @@ a {
 	left: 0;
 	right: 0;
 	margin: 0 auto;
-	z-index: 9;
+	z-index: 999;
 	position: fixed;
 }
 #social a {
@@ -156,7 +156,7 @@ a {
 @media only screen and (min-width: 769px) {
 	#social {
 		max-width: 420px;
-		bottom: 30px;
+		bottom: 60px;
 	}
 }
 @media only screen and (max-width: 768px) {
@@ -267,3 +267,28 @@ p a:hover {
 	margin: 0;
 }
 
+footer {
+	font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+	font-weight: bold;
+	color: #fff;
+	bottom: 0;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+	position: fixed;
+	height: 50px;
+    z-index:99;
+}
+footer p {
+	margin: 0 auto;
+	padding: 25px;
+	font-size: 11px;
+}
+footer #cp{
+    float:right;
+    padding-right:40px;
+}
+footer #sq{
+    padding-left:40px;
+    float:left 
+}
