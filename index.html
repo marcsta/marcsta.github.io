@@ -15,33 +15,25 @@
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<div class="screen">
-  <nav>
-    <div class="toggle"><span>Menu</span></div>
-    <div class="menu-container">
-      <ul class="menu visually-hidden">
-                  
+<div id="m1"><img src="crashtalk1.png"></div>
+<span id="ss">SHOP</span>
+<span id="mm">MUSIC</span>
+<span id="tt">TOUR</span>
+<span id="vv">VIDEOS</span>
 
-        <li>SHOP</li>
-          <li>MUSIC</li>
-          <li>TOUR</li>
-          <li>VIDEOS</li>
-      </ul>
+    <div id="cnt">
+    <div id="marquee_shop" class="marquee"></div>
     </div>
-    </nav>
-    </div>
-    
+
 	<section class="section section--hello" id="hello">
 		<div class="section__inner">
 			<div class="block">
-				<h2>CrasHtalk<br/>an album from ScHoolboy Q</h2>
 			</div>
 		</div>
 	</section>
     	<section class="section section--news" id="news">
 		<div class="section__inner">
 			<div class="block">
-                 				<h2>CrasHtalk<br/>an album from ScHoolboy Q</h2>
 
 			</div>
 		</div>
@@ -49,14 +41,12 @@
     <section class="section section--music" id="music">
 		<div class="section__inner">
 			<div class="block">
-				<h2>CrasHtalk<br/>an album from ScHoolboy Q</h2>
 			</div>
 		</div>
 	</section>
 	<section class="section section--shop" id="shop">
 		<div class="section__inner">
 			<div class="block">
-                				<h2>CrasHtalk<br/>an album from ScHoolboy Q</h2>
 
 			</div>
 		</div>
@@ -64,63 +54,21 @@
 	<section class="section section--videos" id="videos">
     <div class="section__inner">
         <div class="block">
-            				<h2>CrasHtalk<br/>an album from ScHoolboy Q</h2>
-
+     
         </div>
     </div>
 	</section>
-       <div id="social">
-                <a href="https://www.facebook.com/SchoolboyQ" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/groovyq/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://play.spotify.com/artist/5IcR3N7QB1j6KBL8eImZ8m" target="_blank"><i class="fab fa-spotify"></i></a>
-                <a href="https://itunes.apple.com/us/artist/schoolboy-q/333097675"><i class="fab fa-apple"></i></a>
-                <a href="https://twitter.com/ScHoolBoyQ"><i class="fab fa-twitter"></i></a>
-                <a href=" https://www.youtube.com/user/SchoolBoyQVEVO"><i class="fab fa-youtube"></i></a>
-			</div>
+       
     
           <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
     <script src="zenscroll-min.js"></script>
     <script>
-    var nav           = $('nav');
-var menu          = $('.menu');
-var menuContainer = $('.menu-container');
-var subMenu       = $('.submenu');
-var toggle        = $('.toggle');
-var subToggle     = $('.has-children span');
-var back          = '<div class="hide-submenu"></div>';
-var subHide       = $(back);
-
-// Toggle menu
-toggle.on("click", function() {
-  nav.toggleClass('is-visible');
-  if(menu.hasClass('visually-hidden')) {
-    menu.toggleClass('visually-hidden is-visible')
-  } else {
-    menu.removeClass('is-visible');
-    // Wait for CSS animation
-    setTimeout(function() {
-      nav.removeClass('view-submenu');
-      menu.addClass('visually-hidden');
-    }, 200);
-  }
-});
-
-// Add submenu hide bar
-subHide.prependTo(subMenu);
-var subHideToggle = $('.hide-submenu');
-
-// Show submenu
-subToggle.on("click", function() {
-  nav.addClass('view-submenu');
-  // Hide all the submenus...
-  subMenu.hide();
-  // ...except for the one being called
-  $(this).parents('li').find('.submenu').show();
-});
-// Hide submenu
-subHideToggle.on("click", function() {
-  nav.removeClass('view-submenu');
-});
+$(document).ready(
+    function() {
+        $("#ss").click(function() {
+            $("#marquee_shop").toggle();
+        });
+    });
     </script>
 </body>
 </html>
