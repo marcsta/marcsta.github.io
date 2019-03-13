@@ -158,14 +158,18 @@ a {
 		max-width: 420px;
 		bottom: 60px;
 	}
+    footer p{
     	font-size: 11px;
+    }
 }
 @media only screen and (max-width: 768px) {
 	#social {
 		max-width: 360px;
 		bottom: 35px;
 	}
+    footer p{
     	font-size: 7px;
+    }
 }
 /*---------------------------------------------------*/
 
