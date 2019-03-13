@@ -20,9 +20,9 @@
 <span id="mm"> <a href="https://itunes.apple.com/us/artist/schoolboy-q/333097675" target="_blank">MUSIC</a></span>
 <span id="tt">TOUR</span>
 <span id="vv"><a href=" https://www.youtube.com/user/SchoolBoyQVEVO" target="_blank">VIDEOS</a></span>
-
     <div id="cnt">
         <a href="https://txdxe.com/collections/schoolboy-q" target="_blank"><div id="marquee_shop" class="marquee"></div></a>
+        <div id="tour"><h2><a href="https://www.bandsintown.com/t/1013911652?app_id=umg_events&affil_code=umg_US&came_from=267" target="_blank">5/4/19 – FRESNO, CA – GRIZZLY FESTIVAL</a></h2></div>
     </div>
 
 	<section class="section section--hello" id="hello">
@@ -50,7 +50,15 @@
 $(document).ready(
     function() {
         $("#ss").click(function() {
+            $("#tour").hide();
             $("#marquee_shop").toggle();
+        });
+    });
+        $(document).ready(
+    function() {
+        $("#tt").click(function() {
+            $("#marquee_shop").hide();
+            $("#tour").toggle();
         });
     });
     </script>
