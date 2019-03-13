@@ -19,18 +19,16 @@ a {
 	text-decoration: none;
 	color: inherit;
 }
-header {
-	background-color: #000;
-	font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
-	font-weight: bold;
-	color: #fff;
-	top: 0;
+
+#m1 img {
+	bottom: 0;
+	left: 0;
 	margin: 0 auto;
 	text-align: center;
-	width: 100%;
 	position: fixed;
-	z-index: 1;
-	height: 50px
+	right: 0;
+	z-index: 9999;
+    cursor: pointer;
 }
 #ss, #mm, #vv, #tt {
 	position: fixed;
@@ -108,23 +106,16 @@ header {
 	background-image: url('/SQ1.png');
 	display: none;
 }
-#m1 img {
-	bottom: 0;
-	left: 0;
-	margin: 0 auto;
-	text-align: center;
-	position: fixed;
-	right: 0;
-	z-index: 9999;
-    cursor: pointer;
-}
+
+
+
 /*---------------------------------------------------*/
 @media only screen and (max-width: 768px) {
 	#m1 img {
 		max-width: 125px;
 		top: 15px;
 	}
-	#tour h2 {
+	#tour h2, #music h2 {
 		font-size: 1.5em
 	}
 }
@@ -133,12 +124,12 @@ header {
 		max-width: 350px;
 		top: 25px;
 	}
-	#tour h2 {
+	#tour h2, #music h2 {
 		font-size: 4em;
 	}
 }
 /*---------------------------------------------------*/
-#tour {
+#tour, #music {
 	position: fixed;
 	width: 100%;
 	height: 20px;
@@ -258,24 +249,7 @@ header {
 	filter: grayscale(100%);
 	color: #fff;
 }
-footer {
-	background-color: #000;
-	font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
-	font-weight: bold;
-	color: #fff;
-	bottom: 0;
-	margin: 0 auto;
-	text-align: center;
-	width: 100%;
-	position: fixed;
-	height: 50px;
-}
-footer p {
-	margin: 0 auto;
-	text-align: center;
-	padding: 20px;
-	font-size: 12px;
-}
+
 p {
 	font-size: .75rem;
 	line-height: 1.4;
