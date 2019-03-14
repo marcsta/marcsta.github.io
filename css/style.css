@@ -156,9 +156,10 @@ a {
 	#social {
 		max-width: 420px;
 		bottom: 60px;
-        padding: 0 20px;
-
 	}
+    #social a{
+        padding: 0 20px;
+    }
     footer p{
     	font-size: 11px;
     }
@@ -166,9 +167,11 @@ a {
 @media only screen and (max-width: 768px) {
 	#social {
 		max-width: 360px;
-        padding: 0 10px;
 		bottom: 35px;
 	}
+     #social a{
+        padding: 0 10px;
+    }
     footer p{
     	font-size: 7px;
     }
