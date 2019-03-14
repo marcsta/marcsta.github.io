@@ -149,7 +149,6 @@ a {
 }
 #social a {
 	margin: 0 auto;
-	padding: 0 20px;
 	color: #F6E54E;
 }
 /*---------------------------------------------------*/
@@ -157,6 +156,8 @@ a {
 	#social {
 		max-width: 420px;
 		bottom: 60px;
+        padding: 0 20px;
+
 	}
     footer p{
     	font-size: 11px;
@@ -165,6 +166,7 @@ a {
 @media only screen and (max-width: 768px) {
 	#social {
 		max-width: 360px;
+        padding: 0 10px;
 		bottom: 35px;
 	}
     footer p{
@@ -293,4 +295,9 @@ footer #cp{
 footer #sq{
     padding-left:40px;
     float:left 
+}
+
+#lg{
+    max-width:25px;
+ 
 }
