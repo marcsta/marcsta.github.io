@@ -13,7 +13,7 @@ html {
 	-moz-osx-font-smoothing: grayscale;
 }
 body {
-	background-color: #f7e34d;
+	background-color: #ffdc00;
 }
 a {
 	text-decoration: none;
@@ -116,7 +116,7 @@ a {
 		top: 15px;
 	}
 	#tour h2, #music h2 {
-		font-size: 1.5em
+		font-size: 1em
 	}
 }
 @media only screen and (min-width: 769px) {
@@ -125,7 +125,7 @@ a {
 		top: 25px;
 	}
 	#tour h2, #music h2 {
-		font-size: 4em;
+		font-size: 2em;
 	}
 }
 /*---------------------------------------------------*/
