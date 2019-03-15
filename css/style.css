@@ -69,9 +69,9 @@ a {
 	right: 25px;
 }
 #ss:hover, #mm:hover, #tt:hover, #vv:hover {
-	color: #F6E54E;
+	color: #ffdc00;
 	-webkit-text-stroke-width: 1px;
-	-webkit-text-stroke-color: #F6E54E;
+	-webkit-text-stroke-color: #ffdc00;
 	cursor: pointer;
 }
 #cnt {
@@ -149,13 +149,13 @@ a {
 }
 #social a {
 	margin: 0 auto;
-	color: #F6E54E;
+	color: #ffdc00;
 }
 /*---------------------------------------------------*/
 @media only screen and (min-width: 769px) {
 	#social {
 		max-width: 420px;
-		bottom: 60px;
+		bottom: 10px;
 	}
     #social a{
         padding: 0 20px;
@@ -290,6 +290,7 @@ footer {
 footer p {
 	margin: 0 auto;
 	padding: 25px;
+    color:#000;
 }
 footer #cp{
     float:right;
