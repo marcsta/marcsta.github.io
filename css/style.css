@@ -201,8 +201,8 @@ a {
 	transition: 0.5s;
 	transition-delay: 0.5s;
 }
-.section.section--hello {
-	background: url("/1.jpeg")no-repeat center bottom;
+.section--hello {
+	background: no-repeat center bottom;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
