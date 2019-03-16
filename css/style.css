@@ -366,11 +366,9 @@ footer #sq{
 
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 768px) {
-	.col {  margin: 1% 0 1% 0%; }
+	.col {  margin: 5% 0 10% 0%; }
 	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
     	.span_2_of_2, .span_1_of_2 { width: 100%; }
-    .scc_1 {
-	margin: 0px;
-}
-    .scc_2{margin:0 0 10% 0}
+    .bottom{margin-bottom:200px !important;}
+    .scc_1, .scc_2 {margin: 0px;}
 }
