@@ -1,6 +1,5 @@
 html {
 	box-sizing: border-box;
-	font-family: "arial", serif;
 	color: #555;
 	font-size: 16px;
 	scroll-behavior: smooth;
@@ -31,6 +30,7 @@ a {
     cursor: pointer;
 }
 #ss, #mm, #vv, #tt {
+    font-family: "arial", serif;
 	position: fixed;
 	z-index: 9999;
 	font-weight: bold;
@@ -56,6 +56,7 @@ a {
 	top: 0;
 	left: 0;
 }
+#ss a{padding-right:5px;}
 #mm {
 	top: 0;
 	right: 0;
@@ -76,6 +77,7 @@ a {
 	-webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: #ffdc00;
 	cursor: pointer;
+    overflow:visible;
    
 }
 #cnt {
@@ -110,35 +112,6 @@ a {
 	background-image: url('/SQ1.png');
 	display: none;
 }
-
-
-
-/*---------------------------------------------------*/
-@media only screen and (max-width: 768px) {
-	#m1 img {
-		max-width: 125px;
-		top: 15px;
-	}
-	#tour h2, #music h2 {
-		font-size: 1em
-	}
-    #music img{
-    max-width:250px;
-}
-}
-@media only screen and (min-width: 769px) {
-	#m1 img {
-		max-width: 350px;
-		top: 25px;
-	}
-	#tour h2, #music h2 {
-		font-size: 2em;
-	}
-    #music img{
-    max-width:200px;
-}
-}
-/*---------------------------------------------------*/
 #tour, #music {
 	position: absolute;
 	width: 100%;
@@ -155,9 +128,6 @@ a {
 #tour{
     top:50%;
 }
-#music{
-    top:25%;
-}
 
 #social {
 	text-align: center;
@@ -171,41 +141,6 @@ a {
 	margin: 0 auto;
 	color: #ffdc00;
 }
-/*---------------------------------------------------*/
-@media only screen and (min-width: 769px) {
-	#social {
-		max-width: 420px;
-		bottom: 10px;
-	}
-    #social a{
-        padding: 0 20px;
-    }
-    footer p{
-    	font-size: 11px;
-    }
-    #music{
-        position:fixed;
-    }
-}
-@media only screen and (max-width: 768px) {
-	#social {
-		max-width: 360px;
-		bottom: 35px;
-	}
-     #social a{
-        padding: 0 10px;
-    }
-    footer p{
-    	font-size: 7px;
-    }
-}
-/*---------------------------------------------------*/
-
-
-/**
- * The different sections
- */
-
 .section {
 	position: relative;
 	display: flex;
@@ -285,10 +220,16 @@ a {
 	color: #fff;
 }
 
-
+p{
+      font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+    color:#000;
+    font-weight:bold;
+    font-size:10px;
+}
 p a {
 	font-weight: bold;
 	color: inherit;
+  
 }
 p a:hover {
 	border-bottom: .1875rem solid;
@@ -302,7 +243,7 @@ p a:hover {
 footer {
 	font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
 	font-weight: bold;
-	color: #fff;
+	color: #000;
 	bottom: 0;
 	margin: 0 auto;
 	text-align: center;
@@ -328,23 +269,19 @@ footer #sq{
 #lg{
     max-width:25px;
 }
-/*  SECTIONS  */
-.scc_1 {
+	
+.scc_1{
 	clear: both;
 	padding: 0px;
-	margin: 0px 150px;
-}
-.scc_2 {
-	clear: both;
-	padding: 0px;
-	margin: 0px 300px;
+	margin: 0px;
 }
 
 /*  COLUMN SETUP  */
 .col {
 	display: block;
 	float:left;
-	margin: 1% 0 1% 1.6%;
+	margin: 1% 0 1% 1%;
+     background:#ffdc00;
 }
 .col:first-child { margin-left: 0; }
 
@@ -353,22 +290,96 @@ footer #sq{
 .group:after { content:""; display:table; }
 .group:after { clear:both;}
 .group { zoom:1; /* For IE 6/7 */ }
-/*  GRID OF THREE  */
-.span_3_of_3 { width: 100%; }
-.span_2_of_3 { width: 66.13%; }
-.span_1_of_3 { width: 32.26%; }
-.span_2_of_2 {
+
+/*  GRID OF SEVEN  */
+.span_7_of_7 {
 	width: 100%;
 }
-.span_1_of_2 {
-	width: 49.2%;
+
+.span_6_of_7 {
+  	width: 85.57%;
 }
 
+.span_5_of_7 {
+  	width: 71.14%;
+}
+
+.span_4_of_7 {
+  	width: 56.71%;
+}
+
+.span_3_of_7 {
+  	width: 42.28%;
+}
+
+.span_2_of_7 {
+  	width: 27.85%;
+}
+
+.span_1_of_7 {
+  	width: 13.42%;
+    max-width: 300px;
+}
+.span_1_of_7 img{
+    background:#ffdc00;
+    padding: 20px 10px 5px 10px;
+}
+#tp{padding-bottom: 5px}
+
 /*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_1_of_7, .span_2_of_7, .span_3_of_7, .span_4_of_7, .span_5_of_7, .span_6_of_7, .span_7_of_7 { width: 100%; }
+}
+/*---------------------------------------------------*/
+@media only screen and (min-width: 769px) {
+    	#m1 img {
+		max-width: 350px;
+		top: 25px;
+	}
+	#tour h2, #music h2 {
+		font-size: 2em;
+	}
+    #music img{
+        max-width:200px;
+    }
+	#social {
+		max-width: 420px;
+		bottom: 10px;
+	}
+    #social a{
+        padding: 0 20px;
+    }
+    footer p{
+    	font-size: 11px;
+    }
+    #music{
+        top:30%;
+        position:fixed;
+    }
+}
 @media only screen and (max-width: 768px) {
-	.col {  margin: 5% 0 10% 0%; }
-	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
-    	.span_2_of_2, .span_1_of_2 { width: 100%; }
-    .bottom{margin-bottom:200px !important;}
-    .scc_1, .scc_2 {margin: 0px;}
+    #m1 img {
+		max-width: 125px;
+		top: 15px;
+	}
+	#tour h2, #music h2 {
+		font-size: 1em
+	}
+    #music img{
+    max-width:250px;
+}
+	#social {
+		max-width: 360px;
+		bottom: 35px;
+	}
+     #social a{
+        padding: 0 10px;
+    }
+    footer p{
+    	font-size: 7px;
+    }
+    #music{
+        top:25%;
+    }
 }
