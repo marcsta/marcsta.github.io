@@ -281,10 +281,10 @@ footer #sq{
 	display: block;
 	float:left;
 	margin: 1% 0 1% 1%;
-     background:#ffdc00;
+     background:#ffdc00a8;
 }
 .col:first-child { margin-left: 0; }
-
+.col:hover{background:#ffdc00;}
 /*  GROUPING  */
 .group:before,
 .group:after { content:""; display:table; }
@@ -321,7 +321,6 @@ footer #sq{
     max-width: 300px;
 }
 .span_1_of_7 img{
-    background:#ffdc00;
     padding: 20px 10px 5px 10px;
 }
 #tp{padding-bottom: 5px}
@@ -341,7 +340,7 @@ footer #sq{
 		font-size: 2em;
 	}
     #music img{
-        max-width:200px;
+        max-width:220px;
     }
 	#social {
 		max-width: 420px;
