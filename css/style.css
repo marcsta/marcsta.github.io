@@ -14,7 +14,7 @@ html {
 body {
 	background-color: #ffdc00;
 }
-a {
+#ss a, #mm a, #tt a, #vv a, a {
 	text-decoration: none;
 	color: inherit;
 }
