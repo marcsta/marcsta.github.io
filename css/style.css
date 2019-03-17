@@ -30,7 +30,6 @@ body {
     cursor: pointer;
 }
 #ss, #mm, #vv, #tt {
-    font-family: "arial", serif;
 	position: fixed;
 	z-index: 9999;
 	font-weight: bold;
@@ -326,7 +325,9 @@ footer #sq{
 		top: 25px;
 	}
 	#tour h2, #music h2 {
-		font-size: 2em;
+        font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+		font-size: 1em;
+        font-weight:bold;
 	}
 	#social {
 		max-width: 420px;
@@ -339,7 +340,7 @@ footer #sq{
     	font-size: 11px;
     }
     #music{
-        top:30%;
+        top:35%;
         position:fixed;
     }
 }
