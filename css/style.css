@@ -19,7 +19,7 @@ body {
 	color: inherit;
 }
 
-#m1 img {
+#m1 img, #m2 img {
 	bottom: 0;
 	left: 0;
 	margin: 0 auto;
@@ -29,6 +29,7 @@ body {
 	z-index: 9999;
     cursor: pointer;
 }
+
 #ss, #mm, #vv, #tt {
 	position: fixed;
 	z-index: 9999;
@@ -324,6 +325,10 @@ footer #sq{
 		max-width: 350px;
 		top: 25px;
 	}
+     	#m2 img {
+		max-width: 150px;
+		top: 5px;
+	}
 	#tour h2, #music h2 {
         font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
 		font-size: 1em;
@@ -348,6 +353,10 @@ footer #sq{
     #m1 img {
 		max-width: 125px;
 		top: 15px;
+	}
+    #m2 img {
+		max-width: 50px;
+		top: 5px;
 	}
 	#tour h2, #music h2 {
 		font-size: 1em
