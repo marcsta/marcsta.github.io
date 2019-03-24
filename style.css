@@ -1,0 +1,101 @@
+
+@font-face {
+    font-family: 'cooper_blackregular';
+    src: url('cooper_black_regular-webfont.woff2') format('woff2'),
+         url('cooper_black_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body {
+	font-size: 12px;
+	font-family: 'cooper_blackregular';
+	text-align: center;
+	background:linear-gradient(to top, rgba(85, 50, 70, .8), rgba(85, 50, 70, .8)), url("giphy.gif")no-repeat center center fixed;
+     -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color:#d49025;
+
+    
+}
+.center {
+	/* required */
+	 bottom: 0;
+  height: 500px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+    font-size:5em;
+      color:#d49025;
+}
+h2 {
+	font-family: cooper_blackregular';
+	letter-spacing:-1px;
+}
+#mail a{
+    position:absolute;
+    margin: 0 auto;
+    bottom:50px;
+    left:0;
+    right:0;
+    text-decoration: none;
+}
+.footer {
+	max-width: 600px;
+	/* required */
+	margin: auto;
+	position: absolute;
+	left: 0;
+	bottom: 10%;
+	right: 0;
+}
+.clients, .marquee {
+	text-align: center;
+	list-style-type: none;
+    display:inline;
+    
+}
+.clients{
+    margin-bottom: 2em;
+}
+.clients a{
+       text-decoration: none;
+    }
+.clients a:hover{
+     -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: #d49025;
+    cursor:pointer;
+    color:rgba(85, 50, 70, 1);
+}
+
+.button-view:hover{
+    cursor:pointer;
+}
+
+.container {
+	width: 18em;
+	height: 50%;
+	margin: 1em auto;
+	overflow: hidden;
+	background: white;
+	position: relative;
+	box-sizing: border-box;
+}
+.footer a{
+      font-size:1em;
+      color:#d49025;
+    letter-spacing: 20px;
+}
+
+
+
+@media only screen and (max-width: 720px) {
+  body {
+    font-size:13px !important;
+  }
+}
