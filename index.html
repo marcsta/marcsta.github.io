@@ -27,11 +27,16 @@
     <span id="tt">LIVE</span> 
     <span id="vv"><a href="https://www.youtube.com/user/SchoolBoyQVEVO" target="_blank">VIDEOS</a></span>
 	<div id="cnt">
+        <div id="home">
+        <div class="videoWrapper">
+            <iframe width="560" height="315" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media" title="YouTube video player" src="https://www.youtube.com/embed/YDhH5Ju7xKg?&amp;autoplay=1&amp;controls=0&amp;loop=1&amp;showinfo=0&amp;autohide=1&amp;rel=0&amp;mute=2&amp;index=4&amp;enablejsapi=1&amp;widgetid=1"></iframe>
+
+            </div>
+		</div>
 		<div id="tour">
 			<h2><a href="https://www.bandsintown.com/t/1013911652?app_id=umg_events&affil_code=umg_US&came_from=267" target="_blank">5/4/19 – FRESNO, CA – GRIZZLY FESTIVAL</a></h2>
 		</div>
         <div id="music">			
-
      <div class="crr">
 	<div class="card-deck">
 		<div class="card my-3">
@@ -98,34 +103,34 @@
     <script>
 $(document).ready(
     function() {
-        $("#ss").click(function() {
+        $("#m1").click(function() {
             $("#music").hide();
             $("#tour").hide();
-            $("#marquee_shop").toggle();
+            $("#home").toggle();
         });
     });
 $(document).ready(
     function() {
         $("#tt").click(function() {
             $("#music").hide();
-            $("#marquee_shop").hide();
+              $("#home").hide();
             $("#tour").toggle();
         });
     });
  $(document).ready(
          function() {
         $("#mm").click(function() {
-            $("#marquee_shop").hide();
             $("#tour").hide();
+              $("#home").hide();
             $("#music").toggle();
         });
     });
  $(document).ready(
          function() {
         $("#m1").click(function() {
-            $("#marquee_shop").hide();
             $("#tour").hide();
             $("#music").hide();
+            
         });
     });
     </script>

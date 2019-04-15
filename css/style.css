@@ -112,7 +112,7 @@ body {
 	background-image: url('/SQ1.png');
 	display: none;
 }
-#tour, #music {
+#tour, #music{
 	position: absolute;
 	width: 100%;
 	height: auto;
@@ -128,7 +128,18 @@ body {
 #tour{
     top:50%;
 }
-
+#home {
+    	position: absolute;
+	width: 100%;
+	height: auto;
+	margin-top: -10px;
+	text-align: center;
+	color: #fff;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
 #social {
 	text-align: center;
 	left: 0;
@@ -314,6 +325,12 @@ footer #sq{
   }
 }
 
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
 
 /*---------------------------------------------------*/
 @media only screen and (min-width: 835px) {
@@ -340,7 +357,7 @@ footer #sq{
     footer p{
     	font-size: 11px;
     }
-    #music{
+    #music, #home{
         top:35%;
         position:fixed;
     }
@@ -368,8 +385,15 @@ footer #sq{
     footer p{
     	font-size: 7px;
     }
-    #music{
+    #music, #home{
         top:25%;
     }
     .last{margin-bottom:200px;}
+    .videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
 }
