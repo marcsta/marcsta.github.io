@@ -1292,9 +1292,7 @@ input, select, textarea {
 				display: none;
 			}
 
-		.lgg {
-            width: 45px;
-            height: auto;
+		#header .logo {
 	
 		}
 
@@ -1462,7 +1460,7 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			#header {
-				
+				padding: 1.5rem 0;
 			}
 
 				#header .content .inner {
@@ -1642,7 +1640,7 @@ input, select, textarea {
 			text-transform: uppercase;
 		}
 #footer .copyright img{
-    max-width: 30px;
+    max-width: 60px;
 }
 
 		body.is-article-visible #footer {
