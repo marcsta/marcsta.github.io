@@ -1640,7 +1640,7 @@ input, select, textarea {
 			text-transform: uppercase;
 		}
 #footer .copyright img{
-    max-width: 60px;
+    max-width: 30px;
 }
 
 		body.is-article-visible #footer {
