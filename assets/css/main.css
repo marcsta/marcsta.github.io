@@ -1292,7 +1292,9 @@ input, select, textarea {
 				display: none;
 			}
 
-		#header .logo {
+		.lgg {
+            width: 45px;
+            height: auto;
 	
 		}
 
