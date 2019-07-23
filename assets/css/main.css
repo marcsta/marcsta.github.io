@@ -230,12 +230,12 @@ input, select, textarea {
 	@media screen and (max-width: 736px) {
 
 		h1 {
-			font-size: 1.75rem;
+			font-size: 2.55rem;
 			line-height: 1.4;
 		}
 
 		h2 {
-			font-size: 1.25em;
+			font-size: 1.75em;
 			line-height: 1.5;
 		}
 
@@ -1453,7 +1453,7 @@ input, select, textarea {
 				}
 
 			#header .content .inner {
-				padding: 2.5rem 1rem;
+				padding: 0rem 1rem;
 			}
 
 			#header .content p {
