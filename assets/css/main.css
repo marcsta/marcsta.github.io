@@ -1276,7 +1276,7 @@ input, select, textarea {
 			-ms-transition: opacity 0.325s ease-in-out;
 			transition: opacity 0.325s ease-in-out;
 			position: relative;
-			margin-top: 3.5rem;
+			/*margin-top: 3.5rem;*/
 		}
 
 			#header > *:before {
@@ -1287,7 +1287,7 @@ input, select, textarea {
 				left: calc(50% - 1px);
 				width: 1px;
 				height: calc(3.5rem + 1px);
-				background: #ffffff;
+				
 			}
 
 		#header > :first-child {
@@ -1305,8 +1305,7 @@ input, select, textarea {
 			
 
 		#header .content {
-			border-style: solid;
-			border-color: #ffffff;
+		
 			border-top-width: 1px;
 			border-bottom-width: 1px;
 			max-width: 100%;
@@ -1321,7 +1320,7 @@ input, select, textarea {
 				-webkit-transition-delay: 0.25s;
 				-ms-transition-delay: 0.25s;
 				transition-delay: 0.25s;
-				padding: 3rem 2rem;
+				padding: 0rem 2rem;
 				max-height: 40rem;
 				overflow: hidden;
 			}
