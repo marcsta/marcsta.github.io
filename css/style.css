@@ -398,7 +398,7 @@ h2, h3, h4 {
 		line-height: 1em;
 		padding: 0.5em 0.2em 0.8em 0.5em;
 	}
-    ,#tour h2 span, #tour h3 span{
+    #tour h2 span, #tour h3 span{
         background: rgba(0, 0, 0, 0.30);
     }
 	#social {
