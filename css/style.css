@@ -386,7 +386,8 @@ h2, h3, h4 {
 		top: 5px;
 	}
 	#tour h2, #music h2, #shop h2 {
-		font-size: 1.5em
+		font-size: 1.5em;
+        background: rgba(0, 0, 0, 0.30);
 	}
 	#tour {
 		top: 20%;
@@ -396,6 +397,7 @@ h2, h3, h4 {
 		font-weight: bold;
 		line-height: 1em;
 		padding: .8em;
+        background: rgba(0, 0, 0, 0.30);
 	}
 	#social {
 		max-width: 360px;
