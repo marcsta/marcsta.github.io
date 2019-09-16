@@ -396,9 +396,11 @@ h2, h3, h4 {
 		font-size: 1em;
 		font-weight: bold;
 		line-height: 1em;
-		padding: .8em;
-        background: rgba(0, 0, 0, 0.30);
+		padding: 0.5em 0.2em 0.8em 0.5em;
 	}
+    ,#tour h2 span, #tour h3 span{
+        background: rgba(0, 0, 0, 0.30);
+    }
 	#social {
 		max-width: 360px;
 		bottom: 35px;
