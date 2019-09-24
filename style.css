@@ -8,7 +8,7 @@ html, body {
 
 body {
   background-color: #000;
-  background: #000 url(../twt.png) no-repeat center center/contain;
+  background: #000 url(/images/twt.png) no-repeat center center/contain;
   background-blend-mode: hue;
   -webkit-animation: trippy 5s linear infinite;
           animation: trippy 5s linear infinite;
@@ -16,66 +16,66 @@ body {
 
 @-webkit-keyframes trippy {
   10% {
-    background: red url(../twt.png) no-repeat center center/contain;
+    background: red url(/images/twt.png) no-repeat center center/contain;
   }
   20% {
-    background: green url(../twt.png) no-repeat center center/contain;
+    background: green url(/images/twt.png) no-repeat center center/contain;
   }
   30% {
-    background: blue url(../twt.png) no-repeat center center/contain;
+    background: blue url(/images/twt.png) no-repeat center center/contain;
   }
   40% {
-    background: purple url(../twt.png) no-repeat center center/contain;
+    background: purple url(/images/twt.png) no-repeat center center/contain;
   }
   50% {
-    background: yellow url(../twt.png) no-repeat center center/contain;
+    background: yellow url(/images/twt.png) no-repeat center center/contain;
   }
   60% {
-    background: lime url(../twt.png) no-repeat center center/contain;
+    background: lime url(/images/twt.png) no-repeat center center/contain;
   }
   70% {
-    background: orange url(../twt.png) no-repeat center center/contain;
+    background: orange url(/images/twt.png) no-repeat center center/contain;
   }
   80% {
-    background: silve url(../twt.png) no-repeat center center/contain;
+    background: silver url(/images/twt.png) no-repeat center center/contain;
   }
   90% {
-    background: magenta url(../twt.png) no-repeat center center/contain;
+    background: magenta url(/images/twt.png) no-repeat center center/contain;
   }
   100% {
-    background: cyan url(../twt.png) no-repeat center center/contain;
+    background: cyan url(/images/twt.png) no-repeat center center/contain;
   }
 }
 
 @keyframes trippy {
   10% {
-    background: red url(../twt.png) no-repeat center center/contain;
+    background: red url(/images/twt.png) no-repeat center center/contain;
   }
   20% {
-    background: green url(../twt.png) no-repeat center center/contain;
+    background: green url(/images/twt.png) no-repeat center center/contain;
   }
   30% {
-    background: blue url(../twt.png) no-repeat center center/contain;
+    background: blue url(/images/twt.png) no-repeat center center/contain;
   }
   40% {
-    background: purple url(../twt.png) no-repeat center center/contain;
+    background: purple url(/images/twt.png) no-repeat center center/contain;
   }
   50% {
-    background: yellow url(../twt.png) no-repeat center center/contain;
+    background: yellow url(/images/twt.png) no-repeat center center/contain;
   }
   60% {
-    background: lime url(../twt.png) no-repeat center center/contain;
+    background: lime url(/images/twt.png) no-repeat center center/contain;
   }
   70% {
-    background: orange url(../twt.png) no-repeat center center/contain;
+    background: orange url(/images/twt.png) no-repeat center center/contain;
   }
   80% {
-    background: silve url(../twt.png) no-repeat center center/contain;
+    background: silver url(/images/twt.png) no-repeat center center/contain;
   }
   90% {
-    background: magenta url(../twt.png) no-repeat center center/contain;
+    background: magenta url(/images/twt.png) no-repeat center center/contain;
   }
   100% {
-    background: cyan url(../twt.png) no-repeat center center/contain;
+    background: cyan url(/images/twt.png) no-repeat center center/contain;
   }
 }
