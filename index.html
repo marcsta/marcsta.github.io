@@ -30,8 +30,9 @@
 		<div id="m1"><img src="./twelve.png"></div>
 		<div id="desktop">
 			<ul>
-				<li style="list-style: none"><a href="
-                    index.html"><img src="./twelve.png"></a></li>
+				<li style="list-style: none">
+					<a href="index.html"><img src="./twelve.png"></a>
+				</li>
 				<li>
 					<a href="#">GALLERY</a>
 				</li>
@@ -53,20 +54,21 @@
 	</header>
 	<div class="sidebar" id="menu">
 		<div class="sidebar-wrapper" id="menu-wrapper">
-           	<ul id="home">
-				<li>
-					<a href="#">GALLERY</a>
-				</li>
-				<li>
-					<a href="Client.html">CLIENT SERVICES</a>
-				</li>
-				<li>
-					<a href="Contact.html">CONTACT</a>
-				</li>
-			</ul>
+			<div class="bx">
+				<ul>
+					<li>
+						<a href="#">GALLERY</a>
+					</li>
+					<li>
+						<a href="Client.html">CLIENT SERVICES</a>
+					</li>
+					<li>
+						<a href="Contact.html">CONTACT</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
-	       
 	<section class="section section--hello" id="hello"></section>
 	<footer>
 		<p id="cp">INSTAGRAM</p>
@@ -75,10 +77,10 @@
 	<script src='https://code.jquery.com/jquery-2.2.4.min.js'>
 	</script> 
 	<script>
-	$(function() {
-	   var images = ['1.jpg', '2.jpg', '3.jpg'];
-	   $('.section--hello').css({'background-image': 'url(/' + images[Math.floor(Math.random() * images.length)] + ')'});
-	  });
+	   $(function() {
+	      var images = ['1.jpg', '2.jpg', '3.jpg'];
+	      $('.section--hello').css({'background-image': 'url(/' + images[Math.floor(Math.random() * images.length)] + ')'});
+	     });
 	</script> 
 	<script src="zenscroll-min.js">
 	</script> 
