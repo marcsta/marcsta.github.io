@@ -28,6 +28,9 @@ a:hover {
 	text-decoration: none;
 	color: #eee;
 }
+ul{
+    font-weight:bold;
+}
 header {
 	font-weight: bold;
 	font top: 0;
