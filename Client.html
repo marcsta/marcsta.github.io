@@ -27,6 +27,7 @@
 </head>
 <body>
 	<header>
+		<div id="m1"><img src="./twelve.png"></div>
 		<div id="desktop">
 			<ul>
 				<li style="list-style: none"><img src="./twelve.png"></li>
@@ -51,34 +52,36 @@
 	</header>
 	<div class="sidebar" id="menu">
 		<div class="sidebar-wrapper" id="menu-wrapper">
-            <div class="box">
-			<ul>
-				<li>
-					<a href="#">GALLERY</a>
+			<ul id="home">
+			<li>
+					<a href="index.html">GALLERY</a>
 				</li>
 				<li>
-					<a href="Client.html">CLIENT SERVICES</a>
+					<a href="#">CLIENT SERVICES</a>
 				</li>
 				<li>
 					<a href="Contact.html">CONTACT</a>
 				</li>
 			</ul>
-                </div>
 		</div>
 	</div>
-	<div id="m1"><img src="./twelve.png"></div>
-	<section class="section section--hello" id="hello"></section>
+	<div class="box">
+		<div class="inner">
+			<p>Contact</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<p>INFO@TWELVEBEVERLYHILLS.COM</p>
+		</div>
+	</div>
 	<footer>
 		<p id="cp">INSTAGRAM</p>
-		<p id="sq">T W E L V E</p>
 	</footer>
 	<script src='https://code.jquery.com/jquery-2.2.4.min.js'>
 	</script> 
 	<script>
-	$(function() {
-	   var images = ['1.jpg', '2.jpg', '3.jpg'];
-	   $('.section--hello').css({'background-image': 'url(/' + images[Math.floor(Math.random() * images.length)] + ')'});
-	  });
+	   $(function() {
+	      var images = ['1.jpg', '2.jpg', '3.jpg'];
+	      $('.section--hello').css({'background-image': 'url(/' + images[Math.floor(Math.random() * images.length)] + ')'});
+	     });
 	</script> 
 	<script src="zenscroll-min.js">
 	</script> 
