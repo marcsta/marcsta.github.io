@@ -50,6 +50,7 @@ header ul li {
 header ul li a {
 	padding: 2px 0;
 	color: #000;
+    font-weight:bold;
 }
 #m1 img {
 	bottom: 0;
@@ -192,7 +193,6 @@ header ul li a {
 	position: absolute;
 	width: 100%;
 	height: auto;
-	text-align: left;
 	top: 25%;
 	bottom: 0;
 	left: 0;
@@ -277,7 +277,7 @@ header ul li a {
 }
 .bx {
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
