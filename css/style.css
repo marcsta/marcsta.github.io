@@ -35,9 +35,10 @@ header ul {
 header ul li {
     padding:2px 0;
 }
-header ul li a{
+header ul a li{
     padding:2px 0;
     color:#000;
+    
 }
 a:hover{
     text-decoration:none;
@@ -224,22 +225,9 @@ footer #sq{
   transition: all 0.3s ease-in-out;
   visibility: hidden;
 }
-.page-header .page-header-wrapper .settings-menu.active {
-  opacity: 1;
-  top: 51px;
-  visibility: visible;
-  z-index: 99;
-}
-.page-header .page-header-wrapper .settings-menu-overlay {
-  display: none;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-}
-.page-header .page-header-wrapper .settings-menu-overlay.active {
-  display: block;
-}
+
+
+
 #home{
     position: absolute;
 	width: 100%;
@@ -295,6 +283,7 @@ footer #sq{
   transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
   text-transform: none;
   display: block;
+  z-index:9999;
 }
 .sidebar .sidebar-wrapper ul li a {
   color: #000;
@@ -302,6 +291,7 @@ footer #sq{
   display: block;
   font-size: 0.85em;
   padding: 10px 0;
+     z-index:99999;
 }
 
 .sidebar .sidebar-wrapper.active ul li {
@@ -334,5 +324,11 @@ footer #sq{
   top:  50%;
   left: 50%;
   height: 100px;
+  transform: translate(-50%, -50%);
+}
+.bx {
+  position: absolute;
+  top:  50%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
