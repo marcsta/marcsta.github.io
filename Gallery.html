@@ -18,12 +18,18 @@
 	<meta content="T W E L V E" name="twitter:description">
 	<meta content="@" name="twitter:site">
 	<meta content="@" name="twitter:creator">
-	<link href="/twelve2nd.png" rel="shortcut icon" type="image/png">
+	<link href="images/twelve2nd.png" rel="shortcut icon" type="image/png">
 	<link href="" rel="shortcut icon" type="image/png">
 	<link href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css' rel='stylesheet'>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet">
-	<link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+	
+    
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    
 	<link href="../css/style.css" rel="stylesheet">
+    
 </head>
 <body>
 	<header>
@@ -57,39 +63,47 @@
 			<div class="bx">
 				<ul>
 					<li>
-						<a href="Gallery.html">GALLERY</a>
+						<a href="#">GALLERY</a>
 					</li>
 					<li>
 						<a href="Client.html">CLIENT SERVICES</a>
 					</li>
 					<li>
-						<a href="#">CONTACT</a>
+						<a href="Contact.html">CONTACT</a>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</div>
-	<div class="box">
-		<div class="inner">
-			<p>CONTACT</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-			<p>INFO@TWELVEBEVERLYHILLS.COM</p>
-		</div>
-	</div>
+	
+<div id="gallery">
+    <a data-fancybox="gallery" href="/images/1.jpg"><img src="/images/a.jpg"></a>
+    <a data-fancybox="gallery" href="/images/2.jpg"><img src="/images/b.jpg"></a>
+    <a data-fancybox="gallery" href="/images/3.jpg"><img src="/images/c.jpg"></a>
+    <a data-fancybox="gallery" href="/images/4.jpg"><img src="/images/d.jpg"></a>
+    <a data-fancybox="gallery" href="/images/5.jpg"><img src="/images/e.jpg"></a>
+    <a data-fancybox="gallery" href="/images/6.jpg"><img src="/images/f.jpg"></a>
+    <a data-fancybox="gallery" href="/images/1.jpg"><img src="/images/a.jpg"></a>
+    <a data-fancybox="gallery" href="/images/2.jpg"><img src="/images/b.jpg"></a>
+    <a data-fancybox="gallery" href="/images/3.jpg"><img src="/images/c.jpg"></a>
+    <a data-fancybox="gallery" href="/images/4.jpg"><img src="/images/d.jpg"></a>
+    <a data-fancybox="gallery" href="/images/5.jpg"><img src="/images/e.jpg"></a>
+    <a data-fancybox="gallery" href="/images/6.jpg"><img src="/images/f.jpg"></a>
+</div>
+    
 	<footer>
 		<p id="cp">INSTAGRAM</p>
+		<p id="sq">T W E L V E</p>
 	</footer>
-	<script src='https://code.jquery.com/jquery-2.2.4.min.js'>
-	</script> 
+	<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script> 
 	<script>
-	      $(function() {
-	         var images = ['1.jpg', '2.jpg', '3.jpg'];
-	         $('.section--hello').css({'background-image': 'url(/' + images[Math.floor(Math.random() * images.length)] + ')'});
-	        });
+	   $(function() {
+	      var images = ['1.jpg', '2.jpg', '3.jpg'];
+	      $('.section--hello').css({'background-image': 'url(/' + images[Math.floor(Math.random() * images.length)] + ')'});
+	     });
 	</script> 
-	<script src="zenscroll-min.js">
-	</script> 
-	<script src="./script.js">
-	</script>
+	<script src="zenscroll-min.js"></script> 
+	<script src="/js/script.js"></script>
+   
 </body>
 </html>

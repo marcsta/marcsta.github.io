@@ -40,17 +40,19 @@ header {
 	height: 50px;
 	z-index: 99;
 }
-header ul {
+header .dk {
 	margin: 0 auto;
 	padding: 25px;
 	display: block;
 	list-style-type: none;
 	font-size: 10px;
+    float:left;
+    width:200px;
 }
-header ul li {
+header .dk li {
 	padding: 2px 0;
 }
-header ul li a {
+header .dk li a {
 	padding: 2px 0;
 	color: #000;
     font-weight:bold;
@@ -103,6 +105,14 @@ header ul li a {
 	.page-header {
 		display: none;
 	}
+    #gallery{
+        padding-top:5%;
+        width:50%;
+}
+    #gallery img{
+	width: 30%;
+	margin: 1.66%;
+}
 }
 @media only screen and (max-width: 834px) {
 	#m1 img {
@@ -115,6 +125,14 @@ header ul li a {
 	footer p {
 		display: none;
 	}
+    #gallery{
+        padding-top:35%;
+        width: 80%;
+}
+    #gallery img{
+    width: 47%;
+    margin: 5px;
+}
 }
 /*---------------------------------------------------*/
 
@@ -303,4 +321,13 @@ footer #cp {
 }
 footer #sq {
 	float: left
+}
+
+#gallery{
+  transform: translateY(-50%);
+  margin:0 auto;
+}
+
+#gallery img{
+	float: left;
 }
