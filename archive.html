@@ -19,20 +19,11 @@ $(document).ready(function(){
     $(".ofni").click(function(){
         $(".info").toggle();
         $(".clients").hide();
-        $(".content").hide();
     });
 });
 $(document).ready(function(){
     $(".stneilc").click(function(){
         $(".clients").toggle();
-        $(".content").hide();
-        $(".info").hide();
-    });
-});
-    $(document).ready(function(){
-    $(".archive").click(function(){
-        $(".content").toggle();
-        $(".clients").hide();
         $(".info").hide();
     });
 });
@@ -161,6 +152,9 @@ body, a {
 .span_1_of_4 {
 	width: 23.8%;
 } 
+    .span_4_of_4 img{
+      width: 98%;  
+    }
 .span_1_of_4 img, .span_1_of_3 img, .span_1_of_2 img {
 	width: 100%;
 	opacity: 1;
@@ -219,69 +213,27 @@ SPECIALIZING IN INTERDISCIPLINARY PRODUCT AND CONTENT CREATION.
     <div class="btmleft">
     <ul class="fttr">
         <li class="ofni">INFO</li>
-        <li class="archive">ARCHIVE</li>
+        <li class="archive"><a href="index.html">ARCHIVE</a></li>
         <li class="stneilc">CLIENTS</li>
         <li><a href="mailto:studio@hspands.com" target="_blank">CONTACT</a></li>
     </ul>
 </div>
 </div>
-<div class="content" style="display:none;">
+<div class="content">
 <div class="section group">
-	<div class="col span_1_of_4">
-        <a href="archive.html"><img src="img/a.jpg"></a>
+	<div class="col span_4_of_4">
+	<img src="img/a.jpg">
 	</div>
-	<div class="col span_1_of_4">
+	<div class="col span_4_of_4">
 	<img src="img/b.jpg">
 	</div>
-	<div class="col span_1_of_4">
+	<div class="col span_4_of_4">
 	<img src="img/c.jpg">
 	</div>
-	<div class="col span_1_of_4">
+	<div class="col span_4_of_4">
 	<img src="img/d.jpg">
 	</div>
-    <div class="col span_1_of_2">
-	<img src="img/a.jpg">
-	</div>
-	<div class="col span_1_of_2">
-	<img src="img/b.jpg">
-	</div>
-	<div class="col span_1_of_3">
-	<img src="img/c.jpg">
-	</div>
-	<div class="col span_1_of_3">
-	<img src="img/d.jpg">
-	</div>
-    <div class="col span_1_of_3">
-	<img src="img/a.jpg">
-	</div>
-    
-    	<div class="col span_1_of_4">
-	<img src="img/a.jpg">
-	</div>
-	<div class="col span_1_of_4">
-	<img src="img/b.jpg">
-	</div>
-	<div class="col span_1_of_4">
-	<img src="img/c.jpg">
-	</div>
-	<div class="col span_1_of_4">
-	<img src="img/d.jpg">
-	</div>
-    <div class="col span_1_of_2">
-	<img src="img/a.jpg">
-	</div>
-	<div class="col span_1_of_2">
-	<img src="img/b.jpg">
-	</div>
-	<div class="col span_1_of_3">
-	<img src="img/c.jpg">
-	</div>
-	<div class="col span_1_of_3">
-	<img src="img/d.jpg">
-	</div>
-    <div class="col span_1_of_3">
-	<img src="img/a.jpg">
-	</div>
+
 </div>
 </div>    
 <div id="right">
