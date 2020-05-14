@@ -1,293 +1,63 @@
 <!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="H S P AND S"/>
-<title>H S P & S</title>
-
-
-<!-- HEADER SCRIPTS -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="http://code.jquery.com/jquery-migrate-1.2.0.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-    $(".ofni").click(function(){
-        $(".info").toggle();
-        $(".clients").hide();
-        $(".content").hide();
-    });
-});
-$(document).ready(function(){
-    $(".stneilc").click(function(){
-        $(".clients").toggle();
-        $(".content").hide();
-        $(".info").hide();
-    });
-});
-    $(document).ready(function(){
-    $(".archive").click(function(){
-        $(".content").toggle();
-        $(".clients").hide();
-        $(".info").hide();
-    });
-});
-function DisplayTime(){
-if (!document.all && !document.getElementById)
-return
-timeElement=document.getElementById? document.getElementById("curTime"): document.all.tick2
-var CurrentDate=new Date()
-var hours=CurrentDate.getHours()
-var minutes=CurrentDate.getMinutes()
-var seconds=CurrentDate.getSeconds()
-var DayNight="PM"
-if (hours<12) DayNight="AM";
-if (hours>12) hours=hours-12;
-if (hours==0) hours=12;
-if (minutes<=9) minutes="0"+minutes;
-if (seconds<=9) seconds="0"+seconds;
-var currentTime=hours+":"+minutes+":"+seconds+" "+DayNight;
-timeElement.innerHTML=""+currentTime+"</b>"
-setTimeout("DisplayTime()",1000)
-}
-window.onload=DisplayTime    
-    
-</script>
-
-
-<style type="text/css">
-
-body, a {
-    background: url("../img/HSPS.png") no-repeat center center fixed;
-	background-size: 320px;
-	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 400;
-	letter-spacing: 1px;
-	text-shadow: 0 0 0;
-	color: #000000;
-	-webkit-font-smoothing: antialiased;
-	text-decoration: none;
-}
- /*  COLUMNS  */ 
-
-/*  LEFT  */
-
-.info {
-	position: fixed;
-	top: 15px;
-	width: 80px;
-}
-.clients {
-	padding-bottom: 195px;
-	cursor: pointer;
-	z-index;
-	2;
-}
-.fttr {
-	padding: 0;
-	list-style-type: none;
-	cursor: pointer;
-    margin:0;
-}
-.btmleft, .info, .clients {
-	list-style-type: none;
-	text-decoration: none;
-	position: fixed;
-	margin-left: 15px;
-}
-.btmleft, .clients, .ftter {
-	bottom: 15px;
-}
-    #curTime{
-        font-size:9px;
-        float:right; 
-        top:0; 
-        right:0; 
-        padding-top:15px; 
-        padding-right:15px;
-    }    
-    #right:{
-        position:fixed;
-    }
-/* CONTENT */
-
-/*  SECTIONS  */
-.section {
-	clear: both;
-	padding: 0px;
-	margin: 0px;
-    padding:15px 0 20px 0;
-}
-/*  COLUMN SETUP  */
-
-.col {
-	display: block;
-	float: left;
-    line-height:1px;
-}
-.col:first-child {
-	margin-left: 0;
-}
-/*  GROUPING  */
-
-.group:before, .group:after {
-	content: "";
-	display: table;
-}
-.group:after {
-	clear: both;
-}
-.group {
-	zoom: 1;
-	/* For IE 6/7 */
-}
-/*  GRID OF FOUR  */
-
-.span_4_of_4 {
-	width: 100%;
-}
-.span_3_of_4 {
-	width: 74.6%;
-}
-.span_2_of_4 {
-	width: 49.2%;
-}
-.span_1_of_4 {
-	width: 23.8%;
-} 
-.span_1_of_4 img, .span_1_of_3 img, .span_1_of_2 img {
-	width: 100%;
-	opacity: 1;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-.span_1_of_4 img:hover, .span_1_of_3 img:hover, .span_1_of_2 img:hover {
-	opacity: .5;
-}
-
-
-.span_1_of_3 { width: 31.7%; }
-.span_1_of_2 { width: 47.6%; }
-    /*  RIGHT */
- 
-/*  RESPONSIVE */
-@media only screen and (min-width: 481px) {
-	p, ul li {
-		font-size: 9px;
-        line-height: 15px;
-	}
-    #left {
-	float: left;
-	width: 10%;
-}
-.content{
-    float: left;
-    width: 85%;
-}
-#right {
-    float: right;
-    width: 5%;
-}
-}
-@media only screen and (max-width: 480px) {
-    	p, ul li {
-		font-size: 10px;
-        line-height: 15px;
-	}
-	.col {
-		margin: 1% 0 1% 0%;
-	}
-	.span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4 {
-		width: 100%;
-	}
-}
-</style>
-</head>
-<body>
-<div id="left">
-<p class="info" style="display:none;">HSP&S<br>IS A LOS ANGELES BASED DESIGN STUDIO<br>FOUNDED BY JIDE OSIFESO.
-SPECIALIZING IN INTERDISCIPLINARY PRODUCT AND CONTENT CREATION.
-<br>
-<p class="clients" style="display:none;">100 THIEVES<br>AB-SOUL<br>FLAVOR UNIT ENTERTAINMENT<br>FRANCHISE MAGAZINE<br>HARRY HUDSON<br>HYMNE<br>ISAIAH RASHAD<br>JADEN SMITH<br>JAY ROCK<br>JORDAN BRAND<br>KENDRICK LAMAR<br>KINGS ROAD MERCH<br>MSFTSREP<br>NIKE SPORTSWEAR<br>NIKE X NORDSTROM<br>REIGNING CHAMP<br>RISE AGAINST<br>SCHOOLBOY Q<br>STANCE<br>SZA<br>TOP DAWG ENTERTAINMENT<br>WESTBROOK ENTERTAINMENT<br>WILLOW SMITH</p>	
-<p></p>    
-    <div class="btmleft">
-    <ul class="fttr">
-        <li class="ofni">INFO</li>
-        <li class="archive">ARCHIVE</li>
-        <li class="stneilc">CLIENTS</li>
-        <li><a href="mailto:studio@hspands.com" target="_blank">CONTACT</a></li>
-    </ul>
-</div>
-</div>
-<div class="content" style="display:none;">
-<div class="section group">
-	<div class="col span_1_of_4">
-        <a href="archive.html"><img src="img/a.jpg"></a>
-	</div>
-	<div class="col span_1_of_4">
-	<img src="img/b.jpg">
-	</div>
-	<div class="col span_1_of_4">
-	<img src="img/c.jpg">
-	</div>
-	<div class="col span_1_of_4">
-	<img src="img/d.jpg">
-	</div>
-    <div class="col span_1_of_2">
-	<img src="img/a.jpg">
-	</div>
-	<div class="col span_1_of_2">
-	<img src="img/b.jpg">
-	</div>
-	<div class="col span_1_of_3">
-	<img src="img/c.jpg">
-	</div>
-	<div class="col span_1_of_3">
-	<img src="img/d.jpg">
-	</div>
-    <div class="col span_1_of_3">
-	<img src="img/a.jpg">
-	</div>
-    
-    	<div class="col span_1_of_4">
-	<img src="img/a.jpg">
-	</div>
-	<div class="col span_1_of_4">
-	<img src="img/b.jpg">
-	</div>
-	<div class="col span_1_of_4">
-	<img src="img/c.jpg">
-	</div>
-	<div class="col span_1_of_4">
-	<img src="img/d.jpg">
-	</div>
-    <div class="col span_1_of_2">
-	<img src="img/a.jpg">
-	</div>
-	<div class="col span_1_of_2">
-	<img src="img/b.jpg">
-	</div>
-	<div class="col span_1_of_3">
-	<img src="img/c.jpg">
-	</div>
-	<div class="col span_1_of_3">
-	<img src="img/d.jpg">
-	</div>
-    <div class="col span_1_of_3">
-	<img src="img/a.jpg">
-	</div>
-</div>
-</div>    
-<div id="right">
-<span id=curTime></span>				
-</div>
-
-
-</body>
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	</head>
+	<body class="demo-1 loading">
+		<main>
+              <div class="scope">
+                </div>
+            <div class="ttl"><p>THE ULTRA PRIVATE SECRET SOCIETY</p></div>
+			<div data-scroll class="page page--layout-2">
+				<div class="meta">
+				</div>
+				<div class="content content--full content--alternate">
+					<div class="content__item content__item--wide">
+						<span class="content__item-number"></span>
+						<div class="content__item-imgwrap"><div class="content__item-img" style="background-image: url(img/.jpg);"></div></div>
+						<h2 class="content__item-title"></h2>
+						<p class="content__item-description">TUPSS</p>
+					</div>
+					<div class="content__item content__item--wide">
+						<span class="content__item-number">01</span>
+						<div class="content__item-imgwrap"><div class="content__item-img" style="background-image: url(img/17.png);"></div></div>
+						<h2 class="content__item-title">01</h2>
+						<p class="content__item-description" target="_blank"><a href="https://en.wikipedia.org/wiki/Project_MKUltra">Mind Control in America</a></p>
+					</div>
+					<div class="content__item content__item--wide">
+						<span class="content__item-number">02</span>
+						<div class="content__item-imgwrap"><div class="content__item-img" style="background-image: url(img/19.png);"></div></div>
+						<h2 class="content__item-title">02</h2>
+                        <p class="content__item-description"><a href="https://euvsdisinfo.eu/report/the-coronavirus-is-a-bioweapon-of-the-deep-state-which-broke-out-in-italy/" target="_blank">Coronavirus A Deep State Bio-weapon Attack</a></p>
+					</div>
+					<div class="content__item content__item--wide">
+						<span class="content__item-number">03</span>
+						<div class="content__item-imgwrap"><div class="content__item-img" style="background-image: url(img/20.png);"></div></div>
+                        <h2 class="content__item-title">03</h2>
+                        <p class="content__item-description"><a href="https://www.wanttoknow.info/bluebird10pg" target="_blank">Project Bluebird   </a></p>
+                     
+					</div>
+					<div class="content__item content__item--wide">
+						<span class="content__item-number">04</span>
+						<div class="content__item-imgwrap"><div class="content__item-img" style="background-image: url(img/21.png);"></div></div>
+						<h2 class="content__item-title">04</h2>
+                        <p class="content__item-description"><a href="https://go.gale.com/ps/anonymous?id=GALE%7CA509015183&sid=googleScholar&v=2.1&it=r&linkaccess=abs&issn=10639330&p=AONE&sw=w" target="_blank">Human UFOS</a></p>
+					</div>
+					<div class="content__item content__item--wide">
+						<span class="content__item-number">05</span>
+						<div class="content__item-imgwrap"><div class="content__item-img" style="background-image: url(img/22.png);"></div></div>
+						<h2 class="content__item-title">05</h2>
+                        <p class="content__item-description"><a href="https://www.youtube.com/watch?v=quYUf84rQIA" target="_blank">Anglo-Saxon Mission</a></p>
+					</div>
+                    <p class="credits">.01 - Mind Control in America <br/><br/> .02 - Coronavirus A Deep State Bio-weapon Attack <br/><br/> .03 - Project Bluebird <br/><br/> .04 - Human UFOS <br/><br/> .05 - Anglo-Saxon Mission</p>
+				</div>
+			</div>
+		</main>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/demo.js"></script>
+	</body>
 </html>
