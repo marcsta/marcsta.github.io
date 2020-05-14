@@ -102,7 +102,6 @@ a:focus {
 	color: var(--color-link-hover);
 	outline: none;
 }
-
 .page {
 	display: grid;
 	padding: 5vw;
@@ -211,7 +210,7 @@ a:focus {
 	display: grid;
 	grid-template-columns: 50% 50%;
 }
-
+.content__item p {text-align: center;}
 .content__item--wide {
 	grid-template-columns: 20% 100%;
 }
