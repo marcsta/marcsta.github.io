@@ -416,9 +416,7 @@ a:focus {
 	.content__item--expand:nth-child(even) .content__item-description,
 	.content__item--wide .content__item-description,
 	.content__item--wide:nth-child(even) .content__item-description {
-		grid-area: 3 / 1 / 4 / 3;
-	    padding: 1rem 0;
-	    text-align: center;
+	
 	}
 	.content--alternate .content__item-title,
 	.content--alternate .content__item:nth-child(even) .content__item-title {
