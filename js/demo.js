@@ -62,7 +62,7 @@
                     ease: 0.1,
                     // current value setter
                     setValue: () => {
-                        const toValue = 1.5;
+                        const toValue = 2;
                         const fromValue = 1;
                         const val = MathUtils.map(this.props.top - docScroll, winsize.height, -1 * this.props.height, fromValue, toValue);
                         return Math.max(Math.min(val, toValue), fromValue);
