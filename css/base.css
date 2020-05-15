@@ -407,8 +407,8 @@ a:focus {
     .scope{width:80%;}
 }
 @media screen and (max-width: 40em) {
-    .content__item--expand .content__item-description a{
-        font-size:12px;
+    .content__item-description{
+        font-size:12px !important;
     }
     .scope{width:100%}
 	.content__item--expand .content__item-imgwrap,
