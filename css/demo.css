@@ -427,15 +427,15 @@ a:focus {
 .demo-3 {
 	--gap: 20px;
     --body-text: #d3d9d9;
-    --body-bg: #252626;
+    --body-bg: #000;
     --link-text: #727676;
     --link-text-hover: #f95422;
     --grid-name-text: #f95422;
     --grid-title-text: #1f2ee0;
     --grid-nav-text: #000;
-    --grid-nav-bg: #fffa3a;
+    --grid-nav-bg: #0e0e0e;
     --grid-nav-text-hover: #fff;
-    --grid-nav-bg-hover: #1f2ee0;
+    --grid-nav-bg-hover: #0e0e0e;
     --grid-text: #fff;
 }
 
@@ -446,7 +446,7 @@ a:focus {
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: #0013ff;
+	background: #fff;
 	mix-blend-mode: exclusion;
 	opacity: 0;
 	pointer-events: none;
