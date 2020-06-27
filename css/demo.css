@@ -424,7 +424,7 @@ a:focus {
 	animation-duration: 0.6s;
 }
 
-.demo-3 {
+.demo-1 {
 	--gap: 20px;
     --body-text: #d3d9d9;
     --body-bg: #000;
@@ -439,7 +439,7 @@ a:focus {
     --grid-text: #fff;
 }
 
-.demo-3 div.grid__item:not(.grid__item--nav)::after {
+.demo-1 div.grid__item:not(.grid__item--nav)::after {
 	content: '';
 	position: absolute;
 	width: 100%;
@@ -453,7 +453,7 @@ a:focus {
 	transition: opacity 0.3s;
 }
 
-.demo-3 .grid:not(.grid--animating) div.grid__item:not(.grid__item--nav):hover::after {
+.demo-1 .grid:not(.grid--animating) div.grid__item:not(.grid__item--nav):hover::after {
 	opacity: 1;
 }
 
