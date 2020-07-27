@@ -1,11 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
-
-/*
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap');
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -177,10 +172,11 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 0 0 2em 0;
+		margin: 0 0 1em 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
+        font-family: 'Lexend Zetta', sans-serif;
 		color: #000000;
 		font-weight: 600;
 		line-height: 1.65;
@@ -1784,12 +1780,14 @@ input, select, textarea {
 
 			header.major > :first-child:after {
 				content: '';
-				background-color: #ffffff;
+				background-color: #000;
 				display: block;
 				height: 2px;
 				margin: 0.325em 0 0.5em 0;
 				width: 100%;
 			}
+    
+        
 
 		header.major > p {
 			font-size: 0.7em;
@@ -2171,7 +2169,7 @@ input, select, textarea {
 		}
 
 		.image.left, .image.right {
-			max-width: 30%;
+			max-width: 150px;
 		}
 
 			.image.left img, .image.right img {
@@ -2938,7 +2936,7 @@ input, select, textarea {
 			-webkit-flex-direction: row;
 			-ms-flex-direction: row;
 			flex-direction: row;
-			background-color: #2e3450;
+			background-color: #f7f7f7;
 		}
 
 			.spotlights > section > .image {
@@ -3000,7 +2998,7 @@ input, select, textarea {
 				-webkit-flex-direction: row-reverse;
 				-ms-flex-direction: row-reverse;
 				flex-direction: row-reverse;
-				background-color: #333856;
+				background-color: #f7f7f7;
 			}
 
 				.spotlights > section:nth-child(2n) > .content {
@@ -3391,7 +3389,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		padding: 6em 0 2em 0 ;
+		padding: 2em 0 2em 0 ;
 		border-bottom: 0 !important;
 		cursor: default;
 		height: 60vh;
@@ -3417,7 +3415,7 @@ input, select, textarea {
 			display: block;
 			height: 100%;
 			left: 0;
-			opacity: 0.85;
+			opacity: 0.2;
 			position: absolute;
 			top: 0;
 			width: 100%;
@@ -3497,7 +3495,7 @@ input, select, textarea {
 		}
 
 		#banner.style2:after {
-			background-color: #fff;
+			background-color: #f7f7f7;
 		}
 
 		#banner.style3:after {
@@ -4045,6 +4043,7 @@ input, select, textarea {
 
 				#menu ul.links > li {
 					padding: 0;
+                    font-family: 'Lexend Zetta', sans-serif;
 				}
 
 					#menu ul.links > li > a:not(.button) {
