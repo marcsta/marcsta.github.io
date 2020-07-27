@@ -1769,7 +1769,6 @@ input, select, textarea {
 		width: -webkit-max-content;
 		width: -ms-max-content;
 		width: max-content;
-		margin-bottom: 2em;
 	}
 
 		header.major > :first-child {
@@ -1779,15 +1778,17 @@ input, select, textarea {
 
 			header.major > :first-child:after {
 				content: '';
-				background-color: #000;
 				display: block;
+                background:#fff;
 				height: 2px;
 				margin: 0.325em 0 0.5em 0;
 				width: 100%;
 			}
-    
-        
+        header.major h1{
+        color:#b7a47c;
+        }
 
+        
 		header.major > p {
 			font-size: 0.7em;
 			font-weight: 600;
@@ -2769,6 +2770,9 @@ input, select, textarea {
 					color: inherit !important;
 				}
 
+    .tiles article:hover :first-child {
+					color: #b7a47c;
+				}
 			.tiles article .link.primary {
 				border: 0;
 				height: 100%;
@@ -3790,7 +3794,7 @@ input, select, textarea {
 			}
 
 			#main > * > .inner {
-				padding: 4em 0 4em 0 ;
+				padding: 1em 0 1em 0 ;
 				margin: 0 auto;
 				max-width: 65em;
 				width: calc(100% - 6em);
