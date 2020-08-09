@@ -2166,6 +2166,7 @@ input, select, textarea {
 
 		.image img {
 			display: block;
+            max-width:100%;
 		}
 
 		.image.left, .image.right {
@@ -3498,7 +3499,7 @@ input, select, textarea {
 		}
 
 		#banner.style2:after {
-			background-color: #f7f7f7;
+			/*background-color: #f7f7f7;*/
 		}
 
 		#banner.style3:after {
