@@ -2165,7 +2165,11 @@ input, select, textarea {
 		display: inline-block;
 		position: relative;
 	}
-
+    .image .seventy{
+    max-width:70%;
+    margin:0 auto;
+    
+    }
 		.image img {
 			display: block;
             max-width:100%;
@@ -2193,13 +2197,17 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
-			margin: 0 0 2em 0;
+			margin: 0;
 			width: 100%;
 		}
 
 			.image.fit img {
 				width: 100%;
 			}
+.image .fit .shadow{
+    -webkit-box-shadow: 0 32px 64px 0 rgba(0,0,0,.4);
+                box-shadow: 0 32px 64px 0 rgba(0,0,0,.4);
+}
 
 		.image.main {
 			display: block;
@@ -3115,7 +3123,8 @@ input, select, textarea {
 		display: -ms-flex;
 		display: flex;
 		background-color: #FFF;
-		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
+		    -webkit-box-shadow: 0 32px 64px 0 rgba(0,0,0,.4);
+                box-shadow: 0 32px 64px 0 rgba(0,0,0,.4);
 		cursor: default;
 		font-weight: 600;
 		height: 3.25em;
@@ -3599,7 +3608,7 @@ input, select, textarea {
 			}
 
 			#main > * > .inner {
-				padding: 2em 0 ;
+				padding: 6em 0 ;
 				margin: 0 auto;
 				max-width: 65em;
 				width: calc(100% - 6em);
