@@ -31,20 +31,27 @@
   height: 100vh;
 }
 #s1{
-     background: url(/images/tmf1.jpg); 
+     background: url(/images/Front4.jpg); 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 #s2{
-     background: url(/images/tmf2.jpg); 
+     background: url(/images/tmf1.jpg); 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 #s3{
+     background: url(/images/tmf2.jpg); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#s4{
      background: url(/images/tmf3.jpg); 
   -webkit-background-size: cover;
   -moz-background-size: cover;
