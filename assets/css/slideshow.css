@@ -1,0 +1,66 @@
+.slider {
+  position: relative;
+}
+
+#slider {
+  position: relative;
+  overflow: hidden;
+  width: 100% !important;
+}
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 99999px;
+  overflow: hidden;
+  list-style: none;
+}
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+#slider ul li .slide {
+  background-size: cover;
+  height: 100vh;
+}
+#s1{
+     background: url(/images/tmf1.jpg); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#s2{
+     background: url(/images/tmf2.jpg); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#s3{
+     background: url(/images/tmf3.jpg); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.progress {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.3);
+  height: .5rem;
+  width: 100%;
+  bottom: 0;
+  border-top: 1px rgba(0, 0, 0, 0.15) solid;
+}
+.progress .bar {
+  height: 100%;
+  width: 0%;
+  background: #B7A47C;
+}

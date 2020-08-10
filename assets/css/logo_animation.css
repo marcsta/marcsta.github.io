@@ -1,0 +1,198 @@
+
+/* Logo Animation Transition */
+
+svg {
+  width: 250px;
+  fill: none;
+  stroke-width: 8px;
+  stroke-linecap: round;
+  position: absolute;
+  z-index: 1000;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -80px;
+}
+
+svg .one {
+  animation-name: one;
+  animation-delay: 1310ms;
+  animation-duration: 1000ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+svg .two {
+  animation-name: two;
+  animation-delay: 900ms;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+svg .three {
+  animation-name: three;
+  animation-delay: 500ms;
+  animation-duration: 2000ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+svg .four {
+  animation-name: four;
+  animation-delay: 2000ms;
+  animation-duration: 1200ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes one {
+  0% {
+    stroke-dasharray: 0 600;
+    stroke-dashoffset: 300;
+    stroke: #000;
+  }
+  100% {
+    stroke-dasharray: 600 0;
+    stroke-dashoffset: 0;
+    stroke: #000;
+  }
+}
+
+@keyframes two {
+  0% {
+    stroke-dasharray: 0 1500;
+    stroke-dashoffset: -750;
+    stroke: #000;
+  }
+  100% {
+    stroke-dasharray: 1500 0;
+    stroke-dashoffset: 750;
+    stroke: #000;
+  }
+}
+
+@keyframes three {
+  0% {
+    stroke-dasharray: 0 1800;
+    stroke-dashoffset: 800;
+    stroke: #000;
+  }
+  100% {
+    stroke-dasharray: 1800 0;
+    stroke-dashoffset: 0;
+    stroke: #000;
+  }
+}
+
+@keyframes four {
+  from {
+    stroke-dasharray: 0 2500;
+    stroke: #000;
+    stroke-linecap: round;
+  }
+  to {
+    stroke-dasharray: 2500 0;
+    stroke: #000;
+    stroke-linecap: round;
+  }
+}
+
+.logo-fade-out {
+  animation-name: fadeOut;
+  animation-delay: 2700ms;
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    margin-top: -100px;
+  }
+  99% {
+    opacity: 0;
+    margin-top: -100px;
+  }
+  100% {
+    opacity: 0;
+    margin-top: -99999px;
+  }
+}
+
+
+/* Page Transitions */
+
+.animsition {
+  position: relative;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fade-in {
+  width: 100%;
+  height: 100%;
+  animation-name: fadeIn;
+  animation-delay: 3500ms;
+  animation-duration: 2500ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  position: relative;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  -webkit-animation-name: fade-out;
+  animation-name: fade-out;
+}
+
+@-webkit-keyframes fade-in-up {
+  0% {
+    -webkit-transform: translateY(500px);
+    transform: translateY(500px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+.load-test {
+ width: 100%;
+	float: left;
+}
+
+.load-test img {
+	width: 100%;
+	display: inline-block;
+}
