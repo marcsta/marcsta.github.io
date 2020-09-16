@@ -30,33 +30,35 @@
   background-size: cover;
   height: 100vh;
 }
+@media only screen and (min-width: 806px) {
 #s1{
-     background: url(/images/Front4.jpg); 
+     background: url(/images/P_5.jpg); 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 #s2{
-     background: url(/images/tmf1.jpg); 
+     background: url(/images/P_1.jpg); 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 #s3{
-     background: url(/images/tmf2.jpg); 
+     background: url(/images/P_2.jpg); 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 #s4{
-     background: url(/images/tmf3.jpg); 
+     background: url(/images/P_4.jpg); 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
 }
 .progress {
   position: absolute;
@@ -70,4 +72,35 @@
   height: 100%;
   width: 0%;
   background: #B7A47C;
+}
+@media only screen and (max-width: 805px) {
+    #s1{
+  background: url(/images/mobileP_2.png); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#s2{
+  background: url(/images/mobileP_1.png); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#s3{
+  background: url(/images/mobileP_5.png); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#s4{
+  background: url(/images/mobileP_4.png); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 }

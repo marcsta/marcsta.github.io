@@ -887,7 +887,7 @@ footer {
     margin: 10px 0;
 }
         #slider1{
-        background: url(/images/Front1.jpg); 
+        background: url(/images/cover.jpg); 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -908,7 +908,7 @@ footer {
   background-size: cover;
 }
 #slider4{
-        background: url(/images/Front4.jpg); 
+        background: url(/images/P_5.jpg); 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -922,7 +922,7 @@ footer {
   background-size: cover;
 }
     #slider6{
-        background: url(/images/Front6.jpg); 
+        background: url(/images/shop.jpg); 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -933,7 +933,7 @@ footer {
 @media only screen and (max-width: 805px) {
 
 #slider1{
-        background: url(/images/Front1.jpg); 
+        background: url(/images/mobile_cover.png); 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -961,7 +961,7 @@ footer {
   background-size: cover;
 }
 #slider4{
-  background: url(/images/mobile4.png); 
+  background: url(/images/mobileP_5.png); 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -975,7 +975,7 @@ footer {
   background-size: cover;
 }
 #slider6{
-  background: url(/images/mobile6.png); 
+  background: url(/images/mobile_shop.png); 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

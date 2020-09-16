@@ -3965,3 +3965,278 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
+
+
+/* COMPANY */
+.clear {
+  clear: both;
+}
+
+/*** rd STLES ***/
+.crds-container {
+  max-width: 100%;
+}
+
+.rd {
+  margin: 1rem;
+}
+
+.rd-one {
+  position: relative;
+  width: 300px;
+     margin:0 auto;
+  background: #B7A47C;
+  -webkit-box-shadow: 0 4px 38px 0 rgba(0,0,0,.4);
+    box-shadow: 0 4px 38px 0 rgba(0,0,0,.4);
+}
+.rd-one .hdr {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  background-color: #B7A47C;
+}
+.rd-one .hdr::before, .rd-one .hdr::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: inherit;
+}
+.rd-one .hdr::before {
+  -webkit-transform: skewY(-8deg);
+  transform: skewY(-8deg);
+  -webkit-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+.rd-one .hdr::after {
+  -webkit-transform: skewY(8deg);
+  transform: skewY(8deg);
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+.rd-one .hdr .avatar {
+  position: absolute;
+  left: 50%;
+  top: 30px;
+  margin-left: -50px;
+  z-index: 5;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #ccc;
+  border: 3px solid #fff;
+}
+.rd-one .hdr .avatar img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: auto;
+}
+.rd-one h4 {
+  position: relative;
+  margin: 80px 0 30px;
+  text-align: center;
+  min-height:50px;
+}
+.rd-one h4::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  margin-left: -15px;
+  width: 30px;
+  height: 1px;
+  background: #000;
+}
+.rd-one .desc {
+  padding: 0 1rem 2rem;
+  text-align: center;
+  line-height: 1.5;
+  color: #fff;
+}
+.rd-one .ctcts {
+  width: 200px;
+  max-width: 100%;
+  margin: 0 auto 3.5rem;
+}
+.rd-one .ctcts a {
+  display: block;
+  width: 33.333333%;
+  float: left;
+  text-align: center;
+  color: #000;
+}
+.rd-one .ctcts a:hover {
+  color: #333;
+}
+.rd-one .ctcts a:hover .fa::before {
+  color: #fff;
+}
+.rd-one .ctcts a:hover .fa::after {
+  top: 0;
+}
+.rd-one .ctcts a .fa {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  line-height: 39px;
+  overflow: hidden;
+  text-align: center;
+  border: 2px solid #B7A47C;
+  border-radius: 50%;
+}
+.rd-one .ctcts a .fa:before {
+  position: relative;
+  z-index: 1;
+}
+.rd-one .ctcts a .fa::after {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: top .3s;
+  transition: top .3s;
+  background: #B7A47C;
+}
+.rd-one .ctcts a:last-of-type .fa {
+  line-height: 36px;
+}
+.rd-one .ftr {
+  position: relative;
+  padding: 1rem;
+  background-color: #B7A47C;
+  text-align: center;
+}
+.rd-one .ftr a {
+  padding: 0 1rem;
+  color: #e2e2e2;
+  -webkit-transition: color .4s;
+  transition: color .4s;
+}
+.rd-one .ftr a:hover {
+  color: #c8c;
+}
+
+.rd-two {
+  max-width: 300px;
+  margin:0 auto;
+  background: #fff;
+  -webkit-box-shadow: 0 4px 38px 0 rgba(0,0,0,.4);
+    box-shadow: 0 4px 38px 0 rgba(0,0,0,.4);
+}
+.rd-two .hdr {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  background-color: #c8c;
+}
+.rd-two .hdr::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: inherit;
+  -webkit-transform: skewY(8deg);
+  transform: skewY(8deg);
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+.rd-two .hdr .avatar {
+  position: absolute;
+  left: 50%;
+  top: 30px;
+  margin-left: -50px;
+  z-index: 5;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #ccc;
+  border: 3px solid #fff;
+}
+.rd-two .hdr .avatar img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: auto;
+}
+.rd-two h3 {
+  position: relative;
+  margin: 80px 0 30px;
+  text-align: center;
+}
+.rd-two h3::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  margin-left: -15px;
+  width: 30px;
+  height: 1px;
+  background: #000;
+}
+.rd-two .desc {
+  padding: 0 1rem 2rem;
+  text-align: center;
+  line-height: 1.5;
+  color: #777;
+}
+
+.rd-two .ftr {
+  position: relative;
+  height: 45px;
+  background-color: #6573d0;
+  text-align: center;
+}
+.rd-two .ftr p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+.rd-two .ftr p a {
+  padding: 0 1rem;
+  color: #e2e2e2;
+  -webkit-transition: color .4s;
+  transition: color .4s;
+}
+.rd-two .ftr p a:hover {
+  color: #c8c;
+}
+.rd-two .ftr::before {
+  z-index: 0;
+  content: '';
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: inherit;
+  -webkit-transform: skewY(8deg);
+  transform: skewY(8deg);
+  -webkit-transform-origin: 100%;
+  transform-origin: 100%;
+}
+
+/*** RESPONSIVE ***/
+@media only screen and (max-width: 810px) {
+  .rd {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
