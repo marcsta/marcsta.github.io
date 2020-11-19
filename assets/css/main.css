@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta&family=Source+Sans+Pro&display=swap');
 
 
-
+.logo-fade-out{
+    color:#B7A47C;
+}
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -2169,7 +2171,8 @@ input, select, textarea {
 	}
     .image .seventy{
     max-width:70%;
-    margin:0 auto;   
+    margin:0 auto;  
+    border-radius:25px;
     -webkit-box-shadow: 0 32px 64px 0 rgba(0,0,0,.4);
     box-shadow: 0 32px 64px 0 rgba(0,0,0,.4);
     }
@@ -4238,5 +4241,67 @@ input, select, textarea {
     float: none;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+.ards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.ard {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.ard .ard_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.ard .ard_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.ard .ard_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+}
+
+.ard:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+.title-white {
+  color: white;
+}
+
+.title-black {
+  color: black;
+}
+
+@media all and (max-width: 500px) {
+  .ard-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
   }
 }
