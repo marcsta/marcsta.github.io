@@ -1,46 +1,107 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-
+<html>
+<!-- RROMANA RROMANA RROMANA RROMANA RROMANA RROMANA  -->
+<!-- RROMANA RROMANA RROMANA RROMANA RROMANA RROMANA  -->
+<!-- RROMANA RROMANA RROMANA RROMANA RROMANA RROMANA  -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>RROMANA</title>
-    <meta name="description" content="A full page menu with a scroll loop animation.">
-    <meta name="keywords" content="scroll, loop, menu, website, javascript, web design">
-    <meta name="author" content="Codrops">
-    <link rel="shortcut icon" href="favicon.26242483.ico">
-    <link rel="stylesheet" href="https://use.typekit.net/rtr2vsr.css">
-    <link rel="stylesheet" type="text/css" href="base.98fd6c19.css">
-
+	<meta charset="UTF-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<title>RROMANA</title>
+	<meta name="description" content="RROMANA web design and development.">
+  	<meta name="keywords" content="web design, web development, digital marketing, RROMANA design, RROMANAdesign">
+  	<meta name="author" content="RROMANA">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta name="google-site-verification" content="fO-lwQiRuZ9vmvBpY4UANRzghQSwcg1t1NlFFrk9518" />
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js">
+	</script><!-- Styles -->
+	<link href="styles/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div class="frame">
-		<div class="frame__title"><img src="logo.png"></div>
-        <span class="frame__button" aria-hidden="true">studio@rromana.com</span>
+	<div id="gradient">
+    <span id="logo"><a href="mailto:studio@rromana.com"><img src="images/logo.png"></a></span>  
+	<p>hello</p>
+        
+        <div id="space">
+		<div id='stars'></div>
+		<div id='stars2'></div>
+		<div id='stars3'></div>
 	</div>
-    <nav class="menu">
-        <div class="menu__item"><a class="menu__item-inner">10 SUMMERS RECORDS</a></div>
-        <div class="menu__item"><a class="menu__item-inner">BENN GOOD</a></div>
-        <div class="menu__item"><a class="menu__item-inner">BLACKSMITH NYC</a></div>
-        <div class="menu__item"><a class="menu__item-inner">DIANNE GARCIA</a></div>
-        <div class="menu__item"><a class="menu__item-inner">DILITRU</a></div>
-        <div class="menu__item"><a class="menu__item-inner">ELLA MAI</a></div>
-        <div class="menu__item"><a class="menu__item-inner">HYMNE</a></div>
-        <div class="menu__item"><a class="menu__item-inner">JADEN SMITH</a></div>
-        <div class="menu__item"><a class="menu__item-inner">JVCK J</a></div>
-        <div class="menu__item"><a class="menu__item-inner">LOS ANGELES ATHLETIC CLUB</a></div>
-        <div class="menu__item"><a class="menu__item-inner">MALCOLM INC</a></div>
-        <div class="menu__item"><a class="menu__item-inner">MOLLY BAZ</a></div>
-        <div class="menu__item"><a class="menu__item-inner">MSFTSREP</a></div>
-        <div class="menu__item"><a class="menu__item-inner">MUSTARD</a></div>
-        <div class="menu__item"><a class="menu__item-inner">SCHOOLBOY Q</a></div>
-        <div class="menu__item"><a class="menu__item-inner">SIR</a></div>
-        <div class="menu__item"><a class="menu__item-inner">SUMMERSFEST</a></div>
-        <div class="menu__item"><a class="menu__item-inner">TOP DAWG ENTERTAINMENT</a></div>
-        <div class="menu__item"><a class="menu__item-inner">THE LEVERAGE</a></div>
-        <div class="menu__item"><a class="menu__item-inner">WARAIRE BOSWELL</a></div>
-        <div class="menu__item"><a class="menu__item-inner">WILLOW SMITH</a></div>
-    </nav>
-    <script src="js.00a46daa.js"></script>
+	<div class="container" id="container">
+		<ul class="scene" id="scene">
+			<li class="layer box" data-depth="0.25"><img src="images/1121.png"></li>
+		</ul>
+	</div>
+	<!-- Scripts -->
+	<script src="deploy/parallax.js"></script>
+	<script>
+
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+
+	</script>
+	<script>
+var colors = new Array(
+  [63, 67, 173],
+  [255, 95, 162],
+  [45,175,230],
+  [255,0,255],
+  [255, 170, 77]);
+
+var step = 0;
+//color table indices for: 
+// current color left
+// next color left
+// current color right
+// next color right
+var colorIndices = [0,1,2,3];
+
+//transition speed
+var gradientSpeed = 0.0008;
+
+function updateGradient()
+{
+  
+  if ( $===undefined ) return;
+  
+var c0_0 = colors[colorIndices[0]];
+var c0_1 = colors[colorIndices[1]];
+var c1_0 = colors[colorIndices[2]];
+var c1_1 = colors[colorIndices[3]];
+
+var istep = 1 - step;
+var r1 = Math.round(istep * c0_0[0] + step * c0_1[0]);
+var g1 = Math.round(istep * c0_0[1] + step * c0_1[1]);
+var b1 = Math.round(istep * c0_0[2] + step * c0_1[2]);
+var color1 = "rgb("+r1+","+g1+","+b1+")";
+
+var r2 = Math.round(istep * c1_0[0] + step * c1_1[0]);
+var g2 = Math.round(istep * c1_0[1] + step * c1_1[1]);
+var b2 = Math.round(istep * c1_0[2] + step * c1_1[2]);
+var color2 = "rgb("+r2+","+g2+","+b2+")";
+
+ $('#gradient').css({
+   background: "-webkit-gradient(linear, right bottom, right top, from("+color1+"), to("+color2+"))"}).css({
+    background: "-moz-linear-gradient(left, "+color1+" 0%, "+color2+" 100%)"});
+  
+  step += gradientSpeed;
+  if ( step >= 1 )
+  {
+    step %= 1;
+    colorIndices[0] = colorIndices[1];
+    colorIndices[2] = colorIndices[3];
+    
+    //pick two new target color indices
+    //do not pick the same as the current one
+    colorIndices[1] = ( colorIndices[1] + Math.floor( 1 + Math.random() * (colors.length - 1))) % colors.length;
+    colorIndices[3] = ( colorIndices[3] + Math.floor( 1 + Math.random() * (colors.length - 1))) % colors.length;
+    
+  }
+}
+
+setInterval(updateGradient,10);
+</script>
 </body>
 </html>
