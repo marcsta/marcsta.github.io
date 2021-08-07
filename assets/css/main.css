@@ -1587,7 +1587,8 @@ section> :last-child, section:last-child, .last-child {
 	}
 	/* Copyright */
 	#copyright {
-		padding: 20px 30px;
+		padding: 0px 30px;
+    font-size: 12px;
 	}
 }
 .videoWrapper {
