@@ -1163,6 +1163,15 @@ section> :last-child, section:last-child, .last-child {
 	top: 35%;
 	font-size: 2.75em;
 }
+#header .sc {
+	position: absolute;
+	right: 0%;
+	top: 50%;
+	font-size: 1.25em;
+}
+#header .sc a{
+    color:#fff;
+}
 #header h1 a {
 	color: #fff;
 	text-decoration: none;
@@ -1297,7 +1306,7 @@ section> :last-child, section:last-child, .last-child {
     color: #8d9ca3;
     background: #000;
     bottom: 0;
-    position: absolute;
+    position: inherit;
     width: 100%;
 }
 #copyright a {
