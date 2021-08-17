@@ -1555,6 +1555,9 @@ section> :last-child, section:last-child, .last-child {
 /* Small */
 
 @media screen and (max-width: 736px) {
+    .comingsoon{
+     margin-top:50%;   
+    }
 	/* Basic */
 	body, input, textarea, select {
 		font-size: 13pt;
