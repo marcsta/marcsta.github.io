@@ -1498,12 +1498,6 @@ section> :last-child, section:last-child, .last-child {
 	#navPanel .link:first-child, .link:nth-child(2), .link:nth-child(3), .link:nth-child(4), .link:nth-child(5) {
 		width: 100%;
 		border-top: 0;
-		-moz-transform: translateX(100%);
-		-webkit-transform: translateX(100%);
-		transform: translateX(100%);
-		-moz-animation: scroll-left 12s linear infinite;
-		-webkit-animation: scroll-left 12s linear infinite;
-		animation: scroll-left 12s linear infinite;
 	}
 	@-moz-keyframes scroll-left {
 		0% {
@@ -1655,4 +1649,15 @@ section> :last-child, section:last-child, .last-child {
 	100% {
 		transform: translate3d(var(--move-final), 0, 0);
 	}
+}
+#cont{
+    font-size: 2em;
+    color: #fff;
+    background: #000;
+    line-height: 2em;
+    text-align:center;
+    margin:10% 0;
+    padding:20% 0;
+    text-transform: uppercase;
+    
 }
