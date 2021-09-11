@@ -1,0 +1,227 @@
+.screen {
+  position: absolute;
+  width: 100%;
+  height:  20vh;
+  background-color: #69D2E7;
+  z-index: 100;
+  color:#fff;
+  transition: all 200ms ease-in-out;
+}
+
+.after-screen {
+  position: absolute;
+  width: 100%;
+  height: 20vh;
+  background-color: #FA6900;
+  z-index: 100;
+  color:#fff;
+}
+/* Parallax base styles
+  --------------------------------------------- */
+
+.parallax {
+  max-width: 100%;
+  height: 500px;
+  /* fallback for older browsers */
+  
+  height: 100vh;
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective: 300px;
+  perspective: 300px;
+  background-color:#E0E4CC;
+}
+
+.parallax__group {
+  position: relative;
+  height: 500px;
+  /* fallback for older browsers */
+  
+  height: 100vh;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.parallax__block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin-x: 100%;
+}
+
+.parallax__block--fore {
+  width: 1%;
+  padding-top: 55%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  z-index: -1;
+}
+
+.parallax__block--base {
+  width: 34%;
+  padding-top: 34%;
+  -webkit-transform: translate3d(-50%, -50%, -300px) scale(2);
+  transform: translate3d(-50%, -50%, -300px) scale(2);
+  z-index: -2;
+    border-radius: 50%;
+}
+
+.parallax__block--back {
+  width: 10%;
+  padding-top: 21%;
+  -webkit-transform: translate3d(-50%, -50%, -600px) scale(3);
+  transform: translate3d(-50%, -50%, -600px) scale(3);
+  z-index: -3;
+  height:100%;
+}
+
+.parallax__block--deep {
+  width: 13%;
+  padding-top: 13%;
+  -webkit-transform: translate3d(-50%, -50%, -900px) scale(4);
+  transform: translate3d(-50%, -50%, -900px) scale(4);
+  z-index: -4;
+}
+
+.parallax__group {
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+}
+/* demo styles
+--------------------------------------------- */
+
+body,
+html {
+  overflow: hidden;
+}
+
+body {
+  font: 100% / 1.5 Arial;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/* centre the content in the parallax layers */
+
+.title {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* style the groups
+--------------------------------------------- */
+
+#group1 {
+  margin-top: 70%;
+  z-index: 1;
+}
+
+#group1 .parallax__block--base {
+  background: #DDCF21;
+  left: -9%;
+  top: 12%
+}
+
+#group1 .parallax__block--back {
+  background: #206090;
+  left: 141.5%;
+  top: -71.5%;
+    
+}
+
+#group1 .parallax__block--deep {
+  background: #C8302D;
+  left: 50.5%;
+  top: -24.5%;
+  height:100%;
+    -webkit-transform:
+            translateY(-20px)
+            translateX(5px)
+            rotate(27deg); 
+}
+
+#group2 {
+  z-index: 2;
+}
+
+#group2 .parallax__block--fore {
+  top: -19%;
+  left: 38%;
+  background: #8E9A99;
+  opacity: 0.5;
+      -webkit-transform: translateY(-20px) translateX(-135px) rotate(
+-67deg);
+}
+
+#group2 .parallax__block--back {
+  left: 140%;
+  background: #A7DBD8;
+}
+
+#group2 .parallax__block--deep {
+  top: -10%;
+  left: 211%;
+  background: #A7DBD8;
+}
+
+#group3 {
+  z-index: 4;
+  /* slide over group 2 and 4 */
+}
+
+#group3 .parallax__block--base {
+  left: 55%;
+  background: #DDCF21;
+}
+
+#group4 {
+  z-index: 2;
+  /* slide under group 3 and 5 */
+}
+
+#group4 .parallax__block--deep {
+  left: -25%;
+  background: #C8302D;
+    height:100%;
+}
+
+#group4 .parallax__block--back {
+  left: 70%;
+  background: rgb(184, 223, 101);
+}
+
+#group5 {
+  z-index: 3;
+  /* slide over group 4 and 6 */
+}
+
+#group5 .parallax__block--base {
+  left: 59%;
+  background: rgb(214, 229, 100);
+}
+
+#group6 {
+  z-index: 2;
+  /* slide under group 5 and 7 */
+}
+
+#group6 .parallax__block--back {
+  left: -10%;
+  background: rgb(245, 235, 100);
+}
+
+#group7 {
+  z-index: 3;
+  /* slide over group 7 */
+}
+
+#group7 .parallax__block--base {
+  background: rgb(167, 219, 216);
+  left: 57%;
+}
