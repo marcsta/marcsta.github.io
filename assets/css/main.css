@@ -86,7 +86,7 @@ input, select, textarea {
 		background-attachment: fixed;
 		background-repeat: repeat, no-repeat, auto;
 		position: relative;
-		background-color: #e3cdb1;
+		background-color: #fff;
 		line-height: 1.75em;
 		overflow-x: hidden;
 		overflow-y: auto;
@@ -379,7 +379,7 @@ input, select, textarea {
 			flex-shrink: 0;
 			margin: 5px;
 			height: 16em;
-			box-shadow: 0 0 0 2px #000;
+			box-shadow: 0 0 0 10px #000;
 		}
 
 			#main .item.span-1 {
@@ -422,7 +422,7 @@ input, select, textarea {
 					margin: 0.5em 0 0 0;
 					opacity: 0.65;
 				}
-#main .item.intro ul{margin:0 auto;padding-top:25px}
+#main .item.intro ul{margin:0 auto;padding-top:5px}
 #main .item.intro ul li, #main .item.intro ul li a{color:#000;}
 #main .item.intro ul li {
     
