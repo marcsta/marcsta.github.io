@@ -80,12 +80,13 @@ input, select, textarea {
 	}
 
 	body {
-background: #FF416C;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-
+		background-image: url("/images/ac3.jpg");
+		background-position: center;
+		background-size: auto, 100% 100%, cover;
+		background-attachment: fixed;
+		background-repeat: repeat, no-repeat, auto;
+		position: relative;
+		background-color: #e3cdb1;
 		line-height: 1.75em;
 		overflow-x: hidden;
 		overflow-y: auto;
@@ -365,7 +366,7 @@ background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, F
 		}
 
 			#main .items > :last-child {
-				border-right: solid 10px #ffffff;
+				border-right: solid 10px #000;
 			}
 
 		#main .item {
@@ -379,7 +380,7 @@ background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, F
 			flex-shrink: 0;
 			margin: 5px;
 			height: 16em;
-			box-shadow: 0 0 0 10px #fff;
+			box-shadow: 0 0 0 10px #000;
 		}
 
 			#main .item.span-1 {
@@ -395,6 +396,7 @@ background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, F
 			}
 
 			#main .item.intro {
+				
 				display: -moz-flex;
 				display: -webkit-flex;
 				display: -ms-flex;
@@ -408,8 +410,6 @@ background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, F
 				-ms-justify-content: center;
 				justify-content: center;
 				padding: 1em 3em;
-                background: rgba(0,0,0,0.2);
-  backdrop-filter: saturate(180%) blur(10px);
 			}
 
 				#main .item.intro h1 {
@@ -424,14 +424,13 @@ background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, F
 					opacity: 0.65;
 				}
 #main .item.intro ul{margin:0 auto;padding-top:25px}
+#main .item.intro ul li, #main .item.intro ul li a{color:#000;}
 #main .item.intro ul li {
-    color:#fff;
+    
     float:left;
     padding:0 10px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 13px;
-    font-weight:bold;
 }
 
 			#main .item.thumb {
@@ -476,17 +475,7 @@ background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, F
 					-webkit-transition-delay: 1.25s;
 					-ms-transition-delay: 1.25s;
 					transition-delay: 1.25s;
-                   
-                    
 				}
-#main .item.thumb a{
-     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-                    transition: box-shadow 500ms;
-}
-#main .item.thumb a:hover{
-    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.5);
-
-}
 
 				#main .item.thumb.delay-1 img {
 					-moz-transition-delay: 1.375s;
