@@ -354,8 +354,7 @@ input, select, textarea {
 		overflow-x: hidden;
 		-webkit-overflow-scrolling: touch;
 		padding: 5px;
-        -webkit-box-shadow: 5px 5px 22px 0px rgba(0,0,0,0.67); 
-        box-shadow: 5px 5px 22px 0px rgba(0,0,0,0.67); 
+        
 	}
 
 		#main .items {
@@ -380,7 +379,7 @@ input, select, textarea {
 			flex-shrink: 0;
 			margin: 5px;
 			height: 16em;
-			box-shadow: 0 0 0 10px #000;
+			box-shadow: 0 0 0 2px #000;
 		}
 
 			#main .item.span-1 {
@@ -396,7 +395,7 @@ input, select, textarea {
 			}
 
 			#main .item.intro {
-				
+				background: #fff;
 				display: -moz-flex;
 				display: -webkit-flex;
 				display: -ms-flex;
