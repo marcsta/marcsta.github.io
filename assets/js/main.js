@@ -124,7 +124,7 @@
 			},
 			usePopupDefaultStyling: false,
 			usePopupCloser: false,
-			usePopupCaption: true,
+			usePopupCaption: false,
 			usePopupNav: true,
 			windowMargin: 50
 		});
