@@ -80,11 +80,10 @@ input, select, textarea {
 	}
 
 	body {
-		background-image: url("/images/ac3.jpg");
-		background-position: center;
-		background-size: auto, 100% 100%, cover;
-		background-attachment: fixed;
-		background-repeat: repeat, no-repeat, auto;
+		background-image: url("/images/ac4.png");
+	background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center bottom; 
 		position: relative;
 		background-color: #fff;
 		line-height: 1.75em;
@@ -198,7 +197,7 @@ input, select, textarea {
 			}
 
 			ul.icons li a {
-				color: #fff;
+				color: #000;
 				-moz-transition: opacity 0.25s ease-in-out;
 				-webkit-transition: opacity 0.25s ease-in-out;
 				-ms-transition: opacity 0.25s ease-in-out;
@@ -581,7 +580,7 @@ input, select, textarea {
 					flex-shrink: 1;
 					width: calc(50vw - 15px) !important;
 					margin: 2.5px;
-					box-shadow: 0 0 0 5px #ffffff;
+					box-shadow: 0 0 0 5px #000;
 				}
 
 					#main .item.intro {
@@ -635,13 +634,13 @@ input, select, textarea {
 			text-align: left;
 			max-width: 36em;
 			padding-right: 2em;
-            color:#fff;
+            color:#000;
 		}
 
 		#footer > section:last-child {
 			text-align: right;
 			max-width: 36em;
-            color:#fff;
+            color:#000;
 		}
 
 		#footer h2 {
@@ -815,7 +814,7 @@ input, select, textarea {
 			.poptrox-popup {
 				background: #0a0f1c;
 				box-shadow: 0px 0px 30px 10px rgba(8, 11, 19, 0.85);
-				border: solid 2.5px #fff;
+				border: solid 2.5px #000;
 				-moz-box-sizing: content-box;
 				-webkit-box-sizing: content-box;
 				-ms-box-sizing: content-box;
