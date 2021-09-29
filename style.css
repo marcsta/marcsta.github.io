@@ -216,7 +216,7 @@ main {
 }
 .content {
 	padding: 3rem;
-	min-height: 90vh;
+	min-height: 70vh;
 	display: flex;
 	position: relative;
 	flex-direction: column;
@@ -266,6 +266,9 @@ main {
 .content__title img{
     max-width:800px;
     padding: 0px;
+}
+.content .bnner{
+     max-width: 100%;
 }
 .content__text {
 	font-size: 2.25rem;
@@ -539,7 +542,7 @@ main {
 .tiles__title--intro {
 	padding-top: 10vh;
 	align-items: flex-start;
-	justify-content: flex-start;
+	/*justify-content: flex-start;*/
 }
 
 .tiles__title--right {
@@ -561,7 +564,7 @@ main {
 	text-decoration: none;
 }
 .backtop img{
-    max-width:400px;
+    max-width:200px;
 }
 
 
@@ -619,7 +622,8 @@ html.has-scroll-dragging {
 	cursor: grabbing; 
 }
 
-@media screen and (min-width: 53em) {
+/* --- Tablet --- */
+@media only screen and (min-width: 768px) {
 	.frame {
 		display: grid;
 		align-content: space-between;
@@ -671,7 +675,7 @@ html.has-scroll-dragging {
 	}
 	.content__text {
 		max-width: 800px;
-		width: 50vw;
+	
 		min-width: calc(300px - 6rem);
 	}
     .content__text:hover {
@@ -776,7 +780,18 @@ transition: .5s ease;
 	transform: none;
 }
 
-@media (max-width:360px){
+/* --- mobile --- */
+@media only screen and (max-width: 576px) {
+    .one{
+        display:none;
+    }
+    .menu{
+        padding:3em 1em;
+    }
+    
+    .tiles__title img{
+    max-width:300px;
+}
 
 	.card{
 		width: auto;
