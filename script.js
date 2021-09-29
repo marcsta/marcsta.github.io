@@ -8,7 +8,7 @@ const scroll = new LocomotiveScroll({
     touchMultiplier: 2,
     smoothMobile: 0,
     smartphone: {
-        smooth: !0,
+        smooth: !1,
         breakpoint: 767
     },
     tablet: {
