@@ -344,8 +344,9 @@ main {
 	grid-template-areas: "back" "title" "intro" "date" "gallery";
 	grid-gap: 2rem;
 }
-.c2{
-    background-color: #a197da;
+.gallery__figure-caption{
+ text-align: center;
+    text-transform: uppercase;
 }
 
 .js .content {
@@ -406,6 +407,7 @@ main {
 	line-height: 1.2;
 	position: relative;
 	overflow: hidden;
+    padding-left:20px;
 }
 
 .content__intro {
@@ -466,6 +468,11 @@ main {
 		grid-template-areas: 'content content';
 		grid-template-rows: 100vh;
 		grid-template-columns: 3rem 1fr;
+                 background: url(bg1.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 	}
 	.frame {
 		position: fixed;
@@ -496,7 +503,6 @@ main {
 	}
 	.menu,
 	.content {
-		width: 50vw;
 		max-width: 1000px;
 	}
 	.content {
