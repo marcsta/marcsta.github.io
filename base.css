@@ -397,7 +397,12 @@ main {
 .content__back:focus svg {
 	fill: transparent;
 }
-
+.CD{
+    font-size: var(--title-size);
+}
+#blnk{
+    display:flex;
+}
 .content__title {
 	grid-area: title;
 	font-size: var(--title-size-fallback);
