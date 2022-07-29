@@ -21,13 +21,13 @@ p {
     background-repeat: no-repeat;
 }
 #section1 {
-    background-image: url("sb1.png");
+    background-image: url("h1.jpg");
 }
 #section2 {
-    background-image: url("sb3.png");
+    background-image: url("h2.png");
 }
 #section3 {
-    background-image: url("sb2.png");
+    background-image: url("h3.png");
 }
 #section4 .content {
     top: 100%;
