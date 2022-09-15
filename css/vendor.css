@@ -1491,7 +1491,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 .lity-close:active::after,
 .lity-close:visited::before,
 .lity-close:visited::after {
-  background-color: #793ea5;
+  background-color: #c1a87d;
 }
 
 /* Image */
