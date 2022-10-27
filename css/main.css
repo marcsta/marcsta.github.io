@@ -2728,7 +2728,20 @@ html.no-csstransitions .home-content__main {
   }
 
 }
-
+/* ===================================================================
+ * # QTI
+ *
+ * ------------------------------------------------------------------- */
+.s-qti {
+  padding-top: 18rem;
+  padding-bottom: 18rem;
+   background: url(/images/QTI.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
 
 /* ===================================================================
  * # about
@@ -2804,6 +2817,10 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width:1000px) {
+     .s-qti {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+  }
   .s-about {
     padding-top: 15rem;
     padding-bottom: 15rem;
@@ -2817,6 +2834,10 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width:600px) {
+    .s-qti {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
   .s-about {
     padding-top: 12rem;
     padding-bottom: 12rem;
@@ -3945,3 +3966,17 @@ footer a {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
