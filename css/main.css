@@ -1414,6 +1414,10 @@ body.menu-is-open {
   background-color: #0f0f0f;
 }
 
+.lighter{
+ background-color: #fff;
+}
+}
 /* ------------------------------------------------------------------- 
  * ## display headings
  * ------------------------------------------------------------------- */
@@ -2456,6 +2460,9 @@ html.no-csstransitions .home-content__main {
     max-width:40%; 
     }
 
+.home-content__main .md{
+    max-width:30%; 
+    }
 @media only screen and (max-width:1600px) {
   .home-content h1 {
     font-size: 17rem;
@@ -2656,6 +2663,9 @@ html.no-csstransitions .home-content__main {
   }
  .home-content__main .lg{
     max-width:80%; 
+    }
+    .home-content__main .md{
+    max-width:70%; 
     }
   .home-content__video {
     margin-top: 3rem;
@@ -2890,6 +2900,7 @@ html.no-csstransitions .home-content__main {
   padding-top: 18rem;
   padding-bottom: 18rem;
   position: relative;
+  background: #fff;
 }
 
 /* ------------------------------------------------------------------- 
